@@ -1,22 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: cucumber.options.TestRunner
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 12.375 sec <<< FAILURE!
-Verify create repo API #1(Validate create repository)  Time elapsed: 5.306 sec  <<< FAILURE!
-java.lang.AssertionError: expected:<201> but was:<401>
-	at org.junit.Assert.fail(Assert.java:89)
-	at org.junit.Assert.failNotEquals(Assert.java:835)
-	at org.junit.Assert.assertEquals(Assert.java:647)
-	at org.junit.Assert.assertEquals(Assert.java:633)
-	at stepdefinition.CreateRepo.api_call_got_successful_with_status_code(CreateRepo.java:45)
-	at ?.API call got successful with status code 201(file:///C:/CucumberAPITestingFramework/APIFramework/src/test/java/feature/createrepo.feature:7)
-
-Verify create repo API #2(Validate create repository)  Time elapsed: 0.584 sec  <<< FAILURE!
-java.lang.AssertionError: expected:<201> but was:<401>
-	at org.junit.Assert.fail(Assert.java:89)
-	at org.junit.Assert.failNotEquals(Assert.java:835)
-	at org.junit.Assert.assertEquals(Assert.java:647)
-	at org.junit.Assert.assertEquals(Assert.java:633)
-	at stepdefinition.CreateRepo.api_call_got_successful_with_status_code(CreateRepo.java:45)
-	at ?.API call got successful with status code 201(file:///C:/CucumberAPITestingFramework/APIFramework/src/test/java/feature/createrepo.feature:7)
-
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 26.925 sec
