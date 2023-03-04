@@ -7,12 +7,12 @@ import io.restassured.specification.RequestSpecification;
 
 public class Utils {
 
-	String bearer_token = "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";
-	//user: 18081992 token: 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
+	String bearer_token = "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";
+	//user: dhaspravin123@gmail.com password: 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
 	String baseURI = "https://api.github.com";
 	Response response;
 	RequestSpecification reqSpec;
-	String ownerName = "pravinsautomation";
+	//String ownerName = "pravinsautomation";
 	String repoName;
 	
 	public Response postRequest(String resourcePath, String payload) {
