@@ -11438,3 +11438,442 @@
 2023-03-04 23:47:14,428 +0530 [main] DEBUG (BasicClientConnectionManager.java:225) - Connection can be kept alive indefinitely
 2023-03-04 23:47:14,430 +0530 [main] INFO  (RestLogger.java:39) - Request Response:- {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}
 2023-03-04 23:47:14,432 +0530 [main] INFO  (RestLogger.java:39) - Response IS:- {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}
+2023-03-05 00:01:58,809 +0530 [main] INFO  (RestLogger.java:19) - *****************************************************
+2023-03-05 00:01:58,846 +0530 [main] INFO  (RestLogger.java:20) - *****************************************************
+2023-03-05 00:01:58,847 +0530 [main] INFO  (RestLogger.java:21) - $$$$$$$$$$$$$$$$$Verify create repo API$$$$$$$$$$$$$$$$$$$
+2023-03-05 00:01:58,848 +0530 [main] INFO  (RestLogger.java:22) - *****************************************************
+2023-03-05 00:01:58,849 +0530 [main] INFO  (RestLogger.java:23) - *****************************************************
+2023-03-05 00:01:58,927 +0530 [main] INFO  (RestLogger.java:39) - base URI:- https://api.github.com
+2023-03-05 00:01:58,928 +0530 [main] INFO  (RestLogger.java:39) - Resource Path:- /user/repos
+2023-03-05 00:01:58,928 +0530 [main] INFO  (RestLogger.java:39) - Request Payload:- {
+  "name" : "Pravin-Repo",
+  "description" : "My API Repo"
+}
+2023-03-05 00:02:06,901 +0530 [main] DEBUG (BasicClientConnectionManager.java:161) - Get connection for route {s}->https://api.github.com:443
+2023-03-05 00:02:06,967 +0530 [main] DEBUG (DefaultClientConnectionOperator.java:177) - Connecting to api.github.com:443
+2023-03-05 00:02:08,921 +0530 [main] DEBUG (RequestAddCookies.java:123) - CookieSpec selected: ignoreCookies
+2023-03-05 00:02:08,925 +0530 [main] DEBUG (RequestAuthCache.java:77) - Auth cache not set in the context
+2023-03-05 00:02:08,926 +0530 [main] DEBUG (RequestProxyAuthentication.java:89) - Proxy auth state: UNCHALLENGED
+2023-03-05 00:02:08,928 +0530 [main] DEBUG (DefaultRequestDirector.java:677) - Attempt 1 to execute request
+2023-03-05 00:02:08,929 +0530 [main] DEBUG (DefaultClientConnection.java:274) - Sending request: POST /user/repos HTTP/1.1
+2023-03-05 00:02:08,930 +0530 [main] DEBUG (Wire.java:73) -  >> "POST /user/repos HTTP/1.1[\r][\n]"
+2023-03-05 00:02:08,934 +0530 [main] DEBUG (Wire.java:73) -  >> "Authorization: Bearer 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[\r][\n]"
+2023-03-05 00:02:08,935 +0530 [main] DEBUG (Wire.java:73) -  >> "Accept: */*[\r][\n]"
+2023-03-05 00:02:08,935 +0530 [main] DEBUG (Wire.java:73) -  >> "Content-Type: application/json[\r][\n]"
+2023-03-05 00:02:08,936 +0530 [main] DEBUG (Wire.java:73) -  >> "Content-Length: 64[\r][\n]"
+2023-03-05 00:02:08,937 +0530 [main] DEBUG (Wire.java:73) -  >> "Host: api.github.com[\r][\n]"
+2023-03-05 00:02:08,937 +0530 [main] DEBUG (Wire.java:73) -  >> "Connection: Keep-Alive[\r][\n]"
+2023-03-05 00:02:08,938 +0530 [main] DEBUG (Wire.java:73) -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/15.0.1)[\r][\n]"
+2023-03-05 00:02:08,938 +0530 [main] DEBUG (Wire.java:73) -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2023-03-05 00:02:08,939 +0530 [main] DEBUG (Wire.java:73) -  >> "[\r][\n]"
+2023-03-05 00:02:08,940 +0530 [main] DEBUG (DefaultClientConnection.java:278) - >> POST /user/repos HTTP/1.1
+2023-03-05 00:02:08,940 +0530 [main] DEBUG (DefaultClientConnection.java:281) - >> Authorization: Bearer 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
+2023-03-05 00:02:08,941 +0530 [main] DEBUG (DefaultClientConnection.java:281) - >> Accept: */*
+2023-03-05 00:02:08,942 +0530 [main] DEBUG (DefaultClientConnection.java:281) - >> Content-Type: application/json
+2023-03-05 00:02:08,943 +0530 [main] DEBUG (DefaultClientConnection.java:281) - >> Content-Length: 64
+2023-03-05 00:02:08,944 +0530 [main] DEBUG (DefaultClientConnection.java:281) - >> Host: api.github.com
+2023-03-05 00:02:08,945 +0530 [main] DEBUG (DefaultClientConnection.java:281) - >> Connection: Keep-Alive
+2023-03-05 00:02:08,945 +0530 [main] DEBUG (DefaultClientConnection.java:281) - >> User-Agent: Apache-HttpClient/4.5.13 (Java/15.0.1)
+2023-03-05 00:02:08,946 +0530 [main] DEBUG (DefaultClientConnection.java:281) - >> Accept-Encoding: gzip,deflate
+2023-03-05 00:02:08,948 +0530 [main] DEBUG (Wire.java:73) -  >> "{[\r][\n]"
+2023-03-05 00:02:08,949 +0530 [main] DEBUG (Wire.java:73) -  >> "  "name" : "Pravin-Repo",[\r][\n]"
+2023-03-05 00:02:08,950 +0530 [main] DEBUG (Wire.java:73) -  >> "  "description" : "My API Repo"[\r][\n]"
+2023-03-05 00:02:08,950 +0530 [main] DEBUG (Wire.java:87) -  >> "}"
+2023-03-05 00:02:09,189 +0530 [main] DEBUG (Wire.java:73) -  << "HTTP/1.1 401 Unauthorized[\r][\n]"
+2023-03-05 00:02:09,192 +0530 [main] DEBUG (Wire.java:73) -  << "Server: GitHub.com[\r][\n]"
+2023-03-05 00:02:09,193 +0530 [main] DEBUG (Wire.java:73) -  << "Date: Sat, 04 Mar 2023 18:32:12 GMT[\r][\n]"
+2023-03-05 00:02:09,194 +0530 [main] DEBUG (Wire.java:73) -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+2023-03-05 00:02:09,195 +0530 [main] DEBUG (Wire.java:73) -  << "Content-Length: 80[\r][\n]"
+2023-03-05 00:02:09,196 +0530 [main] DEBUG (Wire.java:73) -  << "X-GitHub-Media-Type: github.v3; format=json[\r][\n]"
+2023-03-05 00:02:09,197 +0530 [main] DEBUG (Wire.java:73) -  << "X-RateLimit-Limit: 60[\r][\n]"
+2023-03-05 00:02:09,197 +0530 [main] DEBUG (Wire.java:73) -  << "X-RateLimit-Remaining: 49[\r][\n]"
+2023-03-05 00:02:09,198 +0530 [main] DEBUG (Wire.java:73) -  << "X-RateLimit-Reset: 1677956821[\r][\n]"
+2023-03-05 00:02:09,199 +0530 [main] DEBUG (Wire.java:73) -  << "X-RateLimit-Used: 11[\r][\n]"
+2023-03-05 00:02:09,200 +0530 [main] DEBUG (Wire.java:73) -  << "X-RateLimit-Resource: core[\r][\n]"
+2023-03-05 00:02:09,201 +0530 [main] DEBUG (Wire.java:73) -  << "Access-Control-Expose-Headers: ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, X-GitHub-SSO, X-GitHub-Request-Id, Deprecation, Sunset[\r][\n]"
+2023-03-05 00:02:09,202 +0530 [main] DEBUG (Wire.java:73) -  << "Access-Control-Allow-Origin: *[\r][\n]"
+2023-03-05 00:02:09,202 +0530 [main] DEBUG (Wire.java:73) -  << "Strict-Transport-Security: max-age=31536000; includeSubdomains; preload[\r][\n]"
+2023-03-05 00:02:09,203 +0530 [main] DEBUG (Wire.java:73) -  << "X-Frame-Options: deny[\r][\n]"
+2023-03-05 00:02:09,204 +0530 [main] DEBUG (Wire.java:73) -  << "X-Content-Type-Options: nosniff[\r][\n]"
+2023-03-05 00:02:09,205 +0530 [main] DEBUG (Wire.java:73) -  << "X-XSS-Protection: 0[\r][\n]"
+2023-03-05 00:02:09,205 +0530 [main] DEBUG (Wire.java:73) -  << "Referrer-Policy: origin-when-cross-origin, strict-origin-when-cross-origin[\r][\n]"
+2023-03-05 00:02:09,206 +0530 [main] DEBUG (Wire.java:73) -  << "Content-Security-Policy: default-src 'none'[\r][\n]"
+2023-03-05 00:02:09,207 +0530 [main] DEBUG (Wire.java:73) -  << "Vary: Accept-Encoding, Accept, X-Requested-With[\r][\n]"
+2023-03-05 00:02:09,208 +0530 [main] DEBUG (Wire.java:73) -  << "X-GitHub-Request-Id: F172:717D:1158C3:1557CA:64038EAB[\r][\n]"
+2023-03-05 00:02:09,208 +0530 [main] DEBUG (Wire.java:73) -  << "[\r][\n]"
+2023-03-05 00:02:09,210 +0530 [main] DEBUG (DefaultClientConnection.java:259) - Receiving response: HTTP/1.1 401 Unauthorized
+2023-03-05 00:02:09,211 +0530 [main] DEBUG (DefaultClientConnection.java:262) - << HTTP/1.1 401 Unauthorized
+2023-03-05 00:02:09,212 +0530 [main] DEBUG (DefaultClientConnection.java:265) - << Server: GitHub.com
+2023-03-05 00:02:09,213 +0530 [main] DEBUG (DefaultClientConnection.java:265) - << Date: Sat, 04 Mar 2023 18:32:12 GMT
+2023-03-05 00:02:09,214 +0530 [main] DEBUG (DefaultClientConnection.java:265) - << Content-Type: application/json; charset=utf-8
+2023-03-05 00:02:09,215 +0530 [main] DEBUG (DefaultClientConnection.java:265) - << Content-Length: 80
+2023-03-05 00:02:09,216 +0530 [main] DEBUG (DefaultClientConnection.java:265) - << X-GitHub-Media-Type: github.v3; format=json
+2023-03-05 00:02:09,217 +0530 [main] DEBUG (DefaultClientConnection.java:265) - << X-RateLimit-Limit: 60
+2023-03-05 00:02:09,217 +0530 [main] DEBUG (DefaultClientConnection.java:265) - << X-RateLimit-Remaining: 49
+2023-03-05 00:02:09,218 +0530 [main] DEBUG (DefaultClientConnection.java:265) - << X-RateLimit-Reset: 1677956821
+2023-03-05 00:02:09,219 +0530 [main] DEBUG (DefaultClientConnection.java:265) - << X-RateLimit-Used: 11
+2023-03-05 00:02:09,220 +0530 [main] DEBUG (DefaultClientConnection.java:265) - << X-RateLimit-Resource: core
+2023-03-05 00:02:09,220 +0530 [main] DEBUG (DefaultClientConnection.java:265) - << Access-Control-Expose-Headers: ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, X-GitHub-SSO, X-GitHub-Request-Id, Deprecation, Sunset
+2023-03-05 00:02:09,221 +0530 [main] DEBUG (DefaultClientConnection.java:265) - << Access-Control-Allow-Origin: *
+2023-03-05 00:02:09,222 +0530 [main] DEBUG (DefaultClientConnection.java:265) - << Strict-Transport-Security: max-age=31536000; includeSubdomains; preload
+2023-03-05 00:02:09,223 +0530 [main] DEBUG (DefaultClientConnection.java:265) - << X-Frame-Options: deny
+2023-03-05 00:02:09,224 +0530 [main] DEBUG (DefaultClientConnection.java:265) - << X-Content-Type-Options: nosniff
+2023-03-05 00:02:09,225 +0530 [main] DEBUG (DefaultClientConnection.java:265) - << X-XSS-Protection: 0
+2023-03-05 00:02:09,226 +0530 [main] DEBUG (DefaultClientConnection.java:265) - << Referrer-Policy: origin-when-cross-origin, strict-origin-when-cross-origin
+2023-03-05 00:02:09,226 +0530 [main] DEBUG (DefaultClientConnection.java:265) - << Content-Security-Policy: default-src 'none'
+2023-03-05 00:02:09,227 +0530 [main] DEBUG (DefaultClientConnection.java:265) - << Vary: Accept-Encoding, Accept, X-Requested-With
+2023-03-05 00:02:09,228 +0530 [main] DEBUG (DefaultClientConnection.java:265) - << X-GitHub-Request-Id: F172:717D:1158C3:1557CA:64038EAB
+2023-03-05 00:02:09,252 +0530 [main] DEBUG (DefaultRequestDirector.java:504) - Connection can be kept alive indefinitely
+2023-03-05 00:02:09,253 +0530 [main] DEBUG (HttpAuthenticator.java:77) - Authentication required
+2023-03-05 00:02:09,450 +0530 [main] DEBUG (HttpAuthenticator.java:106) - api.github.com:443 requested authentication
+2023-03-05 00:02:09,451 +0530 [main] DEBUG (HttpAuthenticator.java:110) - Response contains no authentication challenges
+2023-03-05 00:02:09,466 +0530 [main] DEBUG (HTTPBuilder.java:553) - Parsing response as: application/json; charset=utf-8
+2023-03-05 00:02:09,467 +0530 [main] DEBUG (HTTPBuilder.java:556) - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2023-03-05 00:02:09,605 +0530 [main] DEBUG (Wire.java:87) -  << "{"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}"
+2023-03-05 00:02:09,608 +0530 [main] DEBUG (BasicClientConnectionManager.java:200) - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@2519026b
+2023-03-05 00:02:09,609 +0530 [main] DEBUG (BasicClientConnectionManager.java:225) - Connection can be kept alive indefinitely
+2023-03-05 00:02:09,616 +0530 [main] INFO  (RestLogger.java:39) - Request Response:- {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}
+2023-03-05 00:02:09,617 +0530 [main] INFO  (RestLogger.java:39) - Response IS:- {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}
+2023-03-05 00:02:09,816 +0530 [main] INFO  (RestLogger.java:19) - *****************************************************
+2023-03-05 00:02:09,818 +0530 [main] INFO  (RestLogger.java:20) - *****************************************************
+2023-03-05 00:02:09,819 +0530 [main] INFO  (RestLogger.java:21) - $$$$$$$$$$$$$$$$$Verify create repo API$$$$$$$$$$$$$$$$$$$
+2023-03-05 00:02:09,819 +0530 [main] INFO  (RestLogger.java:22) - *****************************************************
+2023-03-05 00:02:09,820 +0530 [main] INFO  (RestLogger.java:23) - *****************************************************
+2023-03-05 00:02:09,826 +0530 [main] INFO  (RestLogger.java:39) - base URI:- https://api.github.com
+2023-03-05 00:02:09,827 +0530 [main] INFO  (RestLogger.java:39) - Resource Path:- /user/repos
+2023-03-05 00:02:09,828 +0530 [main] INFO  (RestLogger.java:39) - Request Payload:- {
+  "name" : "Shruti-Repo",
+  "description" : "Shruti API Repo"
+}
+2023-03-05 00:02:09,877 +0530 [main] DEBUG (BasicClientConnectionManager.java:161) - Get connection for route {s}->https://api.github.com:443
+2023-03-05 00:02:09,879 +0530 [main] DEBUG (DefaultClientConnectionOperator.java:177) - Connecting to api.github.com:443
+2023-03-05 00:02:10,032 +0530 [main] DEBUG (RequestAddCookies.java:123) - CookieSpec selected: ignoreCookies
+2023-03-05 00:02:10,034 +0530 [main] DEBUG (RequestAuthCache.java:77) - Auth cache not set in the context
+2023-03-05 00:02:10,035 +0530 [main] DEBUG (RequestProxyAuthentication.java:89) - Proxy auth state: UNCHALLENGED
+2023-03-05 00:02:10,036 +0530 [main] DEBUG (DefaultRequestDirector.java:677) - Attempt 1 to execute request
+2023-03-05 00:02:10,037 +0530 [main] DEBUG (DefaultClientConnection.java:274) - Sending request: POST /user/repos HTTP/1.1
+2023-03-05 00:02:10,038 +0530 [main] DEBUG (Wire.java:73) -  >> "POST /user/repos HTTP/1.1[\r][\n]"
+2023-03-05 00:02:10,039 +0530 [main] DEBUG (Wire.java:73) -  >> "Authorization: Bearer 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[\r][\n]"
+2023-03-05 00:02:10,040 +0530 [main] DEBUG (Wire.java:73) -  >> "Accept: */*[\r][\n]"
+2023-03-05 00:02:10,040 +0530 [main] DEBUG (Wire.java:73) -  >> "Content-Type: application/json[\r][\n]"
+2023-03-05 00:02:10,042 +0530 [main] DEBUG (Wire.java:73) -  >> "Content-Length: 68[\r][\n]"
+2023-03-05 00:02:10,043 +0530 [main] DEBUG (Wire.java:73) -  >> "Host: api.github.com[\r][\n]"
+2023-03-05 00:02:10,044 +0530 [main] DEBUG (Wire.java:73) -  >> "Connection: Keep-Alive[\r][\n]"
+2023-03-05 00:02:10,045 +0530 [main] DEBUG (Wire.java:73) -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/15.0.1)[\r][\n]"
+2023-03-05 00:02:10,046 +0530 [main] DEBUG (Wire.java:73) -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2023-03-05 00:02:10,046 +0530 [main] DEBUG (Wire.java:73) -  >> "[\r][\n]"
+2023-03-05 00:02:10,047 +0530 [main] DEBUG (DefaultClientConnection.java:278) - >> POST /user/repos HTTP/1.1
+2023-03-05 00:02:10,048 +0530 [main] DEBUG (DefaultClientConnection.java:281) - >> Authorization: Bearer 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
+2023-03-05 00:02:10,050 +0530 [main] DEBUG (DefaultClientConnection.java:281) - >> Accept: */*
+2023-03-05 00:02:10,051 +0530 [main] DEBUG (DefaultClientConnection.java:281) - >> Content-Type: application/json
+2023-03-05 00:02:10,052 +0530 [main] DEBUG (DefaultClientConnection.java:281) - >> Content-Length: 68
+2023-03-05 00:02:10,053 +0530 [main] DEBUG (DefaultClientConnection.java:281) - >> Host: api.github.com
+2023-03-05 00:02:10,054 +0530 [main] DEBUG (DefaultClientConnection.java:281) - >> Connection: Keep-Alive
+2023-03-05 00:02:10,055 +0530 [main] DEBUG (DefaultClientConnection.java:281) - >> User-Agent: Apache-HttpClient/4.5.13 (Java/15.0.1)
+2023-03-05 00:02:10,057 +0530 [main] DEBUG (DefaultClientConnection.java:281) - >> Accept-Encoding: gzip,deflate
+2023-03-05 00:02:10,058 +0530 [main] DEBUG (Wire.java:73) -  >> "{[\r][\n]"
+2023-03-05 00:02:10,059 +0530 [main] DEBUG (Wire.java:73) -  >> "  "name" : "Shruti-Repo",[\r][\n]"
+2023-03-05 00:02:10,060 +0530 [main] DEBUG (Wire.java:73) -  >> "  "description" : "Shruti API Repo"[\r][\n]"
+2023-03-05 00:02:10,060 +0530 [main] DEBUG (Wire.java:87) -  >> "}"
+2023-03-05 00:02:10,292 +0530 [main] DEBUG (Wire.java:73) -  << "HTTP/1.1 401 Unauthorized[\r][\n]"
+2023-03-05 00:02:10,293 +0530 [main] DEBUG (Wire.java:73) -  << "Server: GitHub.com[\r][\n]"
+2023-03-05 00:02:10,294 +0530 [main] DEBUG (Wire.java:73) -  << "Date: Sat, 04 Mar 2023 18:32:13 GMT[\r][\n]"
+2023-03-05 00:02:10,295 +0530 [main] DEBUG (Wire.java:73) -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+2023-03-05 00:02:10,296 +0530 [main] DEBUG (Wire.java:73) -  << "Content-Length: 80[\r][\n]"
+2023-03-05 00:02:10,297 +0530 [main] DEBUG (Wire.java:73) -  << "X-GitHub-Media-Type: github.v3; format=json[\r][\n]"
+2023-03-05 00:02:10,298 +0530 [main] DEBUG (Wire.java:73) -  << "X-RateLimit-Limit: 60[\r][\n]"
+2023-03-05 00:02:10,298 +0530 [main] DEBUG (Wire.java:73) -  << "X-RateLimit-Remaining: 48[\r][\n]"
+2023-03-05 00:02:10,299 +0530 [main] DEBUG (Wire.java:73) -  << "X-RateLimit-Reset: 1677956821[\r][\n]"
+2023-03-05 00:02:10,300 +0530 [main] DEBUG (Wire.java:73) -  << "X-RateLimit-Used: 12[\r][\n]"
+2023-03-05 00:02:10,302 +0530 [main] DEBUG (Wire.java:73) -  << "X-RateLimit-Resource: core[\r][\n]"
+2023-03-05 00:02:10,303 +0530 [main] DEBUG (Wire.java:73) -  << "Access-Control-Expose-Headers: ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, X-GitHub-SSO, X-GitHub-Request-Id, Deprecation, Sunset[\r][\n]"
+2023-03-05 00:02:10,304 +0530 [main] DEBUG (Wire.java:73) -  << "Access-Control-Allow-Origin: *[\r][\n]"
+2023-03-05 00:02:10,307 +0530 [main] DEBUG (Wire.java:73) -  << "Strict-Transport-Security: max-age=31536000; includeSubdomains; preload[\r][\n]"
+2023-03-05 00:02:10,308 +0530 [main] DEBUG (Wire.java:73) -  << "X-Frame-Options: deny[\r][\n]"
+2023-03-05 00:02:10,309 +0530 [main] DEBUG (Wire.java:73) -  << "X-Content-Type-Options: nosniff[\r][\n]"
+2023-03-05 00:02:10,310 +0530 [main] DEBUG (Wire.java:73) -  << "X-XSS-Protection: 0[\r][\n]"
+2023-03-05 00:02:10,314 +0530 [main] DEBUG (Wire.java:73) -  << "Referrer-Policy: origin-when-cross-origin, strict-origin-when-cross-origin[\r][\n]"
+2023-03-05 00:02:10,316 +0530 [main] DEBUG (Wire.java:73) -  << "Content-Security-Policy: default-src 'none'[\r][\n]"
+2023-03-05 00:02:10,317 +0530 [main] DEBUG (Wire.java:73) -  << "Vary: Accept-Encoding, Accept, X-Requested-With[\r][\n]"
+2023-03-05 00:02:10,318 +0530 [main] DEBUG (Wire.java:73) -  << "X-GitHub-Request-Id: F173:1C4D:4B20:4356F:64038EAD[\r][\n]"
+2023-03-05 00:02:10,319 +0530 [main] DEBUG (Wire.java:73) -  << "[\r][\n]"
+2023-03-05 00:02:10,320 +0530 [main] DEBUG (DefaultClientConnection.java:259) - Receiving response: HTTP/1.1 401 Unauthorized
+2023-03-05 00:02:10,321 +0530 [main] DEBUG (DefaultClientConnection.java:262) - << HTTP/1.1 401 Unauthorized
+2023-03-05 00:02:10,322 +0530 [main] DEBUG (DefaultClientConnection.java:265) - << Server: GitHub.com
+2023-03-05 00:02:10,323 +0530 [main] DEBUG (DefaultClientConnection.java:265) - << Date: Sat, 04 Mar 2023 18:32:13 GMT
+2023-03-05 00:02:10,324 +0530 [main] DEBUG (DefaultClientConnection.java:265) - << Content-Type: application/json; charset=utf-8
+2023-03-05 00:02:10,325 +0530 [main] DEBUG (DefaultClientConnection.java:265) - << Content-Length: 80
+2023-03-05 00:02:10,329 +0530 [main] DEBUG (DefaultClientConnection.java:265) - << X-GitHub-Media-Type: github.v3; format=json
+2023-03-05 00:02:10,331 +0530 [main] DEBUG (DefaultClientConnection.java:265) - << X-RateLimit-Limit: 60
+2023-03-05 00:02:10,332 +0530 [main] DEBUG (DefaultClientConnection.java:265) - << X-RateLimit-Remaining: 48
+2023-03-05 00:02:10,335 +0530 [main] DEBUG (DefaultClientConnection.java:265) - << X-RateLimit-Reset: 1677956821
+2023-03-05 00:02:10,336 +0530 [main] DEBUG (DefaultClientConnection.java:265) - << X-RateLimit-Used: 12
+2023-03-05 00:02:10,337 +0530 [main] DEBUG (DefaultClientConnection.java:265) - << X-RateLimit-Resource: core
+2023-03-05 00:02:10,338 +0530 [main] DEBUG (DefaultClientConnection.java:265) - << Access-Control-Expose-Headers: ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, X-GitHub-SSO, X-GitHub-Request-Id, Deprecation, Sunset
+2023-03-05 00:02:10,339 +0530 [main] DEBUG (DefaultClientConnection.java:265) - << Access-Control-Allow-Origin: *
+2023-03-05 00:02:10,340 +0530 [main] DEBUG (DefaultClientConnection.java:265) - << Strict-Transport-Security: max-age=31536000; includeSubdomains; preload
+2023-03-05 00:02:10,343 +0530 [main] DEBUG (DefaultClientConnection.java:265) - << X-Frame-Options: deny
+2023-03-05 00:02:10,344 +0530 [main] DEBUG (DefaultClientConnection.java:265) - << X-Content-Type-Options: nosniff
+2023-03-05 00:02:10,345 +0530 [main] DEBUG (DefaultClientConnection.java:265) - << X-XSS-Protection: 0
+2023-03-05 00:02:10,346 +0530 [main] DEBUG (DefaultClientConnection.java:265) - << Referrer-Policy: origin-when-cross-origin, strict-origin-when-cross-origin
+2023-03-05 00:02:10,347 +0530 [main] DEBUG (DefaultClientConnection.java:265) - << Content-Security-Policy: default-src 'none'
+2023-03-05 00:02:10,349 +0530 [main] DEBUG (DefaultClientConnection.java:265) - << Vary: Accept-Encoding, Accept, X-Requested-With
+2023-03-05 00:02:10,350 +0530 [main] DEBUG (DefaultClientConnection.java:265) - << X-GitHub-Request-Id: F173:1C4D:4B20:4356F:64038EAD
+2023-03-05 00:02:10,359 +0530 [main] DEBUG (DefaultRequestDirector.java:504) - Connection can be kept alive indefinitely
+2023-03-05 00:02:10,360 +0530 [main] DEBUG (HttpAuthenticator.java:77) - Authentication required
+2023-03-05 00:02:10,361 +0530 [main] DEBUG (HttpAuthenticator.java:106) - api.github.com:443 requested authentication
+2023-03-05 00:02:10,362 +0530 [main] DEBUG (HttpAuthenticator.java:110) - Response contains no authentication challenges
+2023-03-05 00:02:10,363 +0530 [main] DEBUG (HTTPBuilder.java:553) - Parsing response as: application/json; charset=utf-8
+2023-03-05 00:02:10,364 +0530 [main] DEBUG (HTTPBuilder.java:556) - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2023-03-05 00:02:10,369 +0530 [main] DEBUG (Wire.java:87) -  << "{"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}"
+2023-03-05 00:02:10,370 +0530 [main] DEBUG (BasicClientConnectionManager.java:200) - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@1953bc95
+2023-03-05 00:02:10,372 +0530 [main] DEBUG (BasicClientConnectionManager.java:225) - Connection can be kept alive indefinitely
+2023-03-05 00:02:10,373 +0530 [main] INFO  (RestLogger.java:39) - Request Response:- {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}
+2023-03-05 00:02:10,374 +0530 [main] INFO  (RestLogger.java:39) - Response IS:- {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}
+2023-03-05 00:03:15,442 +0530 [main] INFO  (RestLogger.java:19) - *****************************************************
+2023-03-05 00:03:15,457 +0530 [main] INFO  (RestLogger.java:20) - *****************************************************
+2023-03-05 00:03:15,467 +0530 [main] INFO  (RestLogger.java:21) - $$$$$$$$$$$$$$$$$Verify create repo API$$$$$$$$$$$$$$$$$$$
+2023-03-05 00:03:15,468 +0530 [main] INFO  (RestLogger.java:22) - *****************************************************
+2023-03-05 00:03:15,470 +0530 [main] INFO  (RestLogger.java:23) - *****************************************************
+2023-03-05 00:03:15,574 +0530 [main] INFO  (RestLogger.java:39) - base URI:- https://api.github.com
+2023-03-05 00:03:15,575 +0530 [main] INFO  (RestLogger.java:39) - Resource Path:- /user/repos
+2023-03-05 00:03:15,576 +0530 [main] INFO  (RestLogger.java:39) - Request Payload:- {
+  "name" : "Pravin-Repo",
+  "description" : "My API Repo"
+}
+2023-03-05 00:03:19,294 +0530 [main] DEBUG (BasicClientConnectionManager.java:161) - Get connection for route {s}->https://api.github.com:443
+2023-03-05 00:03:19,338 +0530 [main] DEBUG (DefaultClientConnectionOperator.java:177) - Connecting to api.github.com:443
+2023-03-05 00:03:19,905 +0530 [main] DEBUG (RequestAddCookies.java:123) - CookieSpec selected: ignoreCookies
+2023-03-05 00:03:19,909 +0530 [main] DEBUG (RequestAuthCache.java:77) - Auth cache not set in the context
+2023-03-05 00:03:19,910 +0530 [main] DEBUG (RequestProxyAuthentication.java:89) - Proxy auth state: UNCHALLENGED
+2023-03-05 00:03:19,913 +0530 [main] DEBUG (DefaultRequestDirector.java:677) - Attempt 1 to execute request
+2023-03-05 00:03:19,914 +0530 [main] DEBUG (DefaultClientConnection.java:274) - Sending request: POST /user/repos HTTP/1.1
+2023-03-05 00:03:19,915 +0530 [main] DEBUG (Wire.java:73) -  >> "POST /user/repos HTTP/1.1[\r][\n]"
+2023-03-05 00:03:19,921 +0530 [main] DEBUG (Wire.java:73) -  >> "Authorization: Bearer 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[\r][\n]"
+2023-03-05 00:03:19,922 +0530 [main] DEBUG (Wire.java:73) -  >> "Accept: */*[\r][\n]"
+2023-03-05 00:03:19,923 +0530 [main] DEBUG (Wire.java:73) -  >> "Content-Type: application/json[\r][\n]"
+2023-03-05 00:03:19,923 +0530 [main] DEBUG (Wire.java:73) -  >> "Content-Length: 64[\r][\n]"
+2023-03-05 00:03:19,924 +0530 [main] DEBUG (Wire.java:73) -  >> "Host: api.github.com[\r][\n]"
+2023-03-05 00:03:19,925 +0530 [main] DEBUG (Wire.java:73) -  >> "Connection: Keep-Alive[\r][\n]"
+2023-03-05 00:03:19,926 +0530 [main] DEBUG (Wire.java:73) -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/15.0.1)[\r][\n]"
+2023-03-05 00:03:19,927 +0530 [main] DEBUG (Wire.java:73) -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2023-03-05 00:03:19,928 +0530 [main] DEBUG (Wire.java:73) -  >> "[\r][\n]"
+2023-03-05 00:03:19,928 +0530 [main] DEBUG (DefaultClientConnection.java:278) - >> POST /user/repos HTTP/1.1
+2023-03-05 00:03:19,929 +0530 [main] DEBUG (DefaultClientConnection.java:281) - >> Authorization: Bearer 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
+2023-03-05 00:03:19,930 +0530 [main] DEBUG (DefaultClientConnection.java:281) - >> Accept: */*
+2023-03-05 00:03:19,931 +0530 [main] DEBUG (DefaultClientConnection.java:281) - >> Content-Type: application/json
+2023-03-05 00:03:19,932 +0530 [main] DEBUG (DefaultClientConnection.java:281) - >> Content-Length: 64
+2023-03-05 00:03:19,933 +0530 [main] DEBUG (DefaultClientConnection.java:281) - >> Host: api.github.com
+2023-03-05 00:03:19,934 +0530 [main] DEBUG (DefaultClientConnection.java:281) - >> Connection: Keep-Alive
+2023-03-05 00:03:19,935 +0530 [main] DEBUG (DefaultClientConnection.java:281) - >> User-Agent: Apache-HttpClient/4.5.13 (Java/15.0.1)
+2023-03-05 00:03:19,936 +0530 [main] DEBUG (DefaultClientConnection.java:281) - >> Accept-Encoding: gzip,deflate
+2023-03-05 00:03:19,937 +0530 [main] DEBUG (Wire.java:73) -  >> "{[\r][\n]"
+2023-03-05 00:03:19,938 +0530 [main] DEBUG (Wire.java:73) -  >> "  "name" : "Pravin-Repo",[\r][\n]"
+2023-03-05 00:03:19,939 +0530 [main] DEBUG (Wire.java:73) -  >> "  "description" : "My API Repo"[\r][\n]"
+2023-03-05 00:03:19,940 +0530 [main] DEBUG (Wire.java:87) -  >> "}"
+2023-03-05 00:03:21,241 +0530 [main] DEBUG (Wire.java:73) -  << "HTTP/1.1 201 Created[\r][\n]"
+2023-03-05 00:03:21,244 +0530 [main] DEBUG (Wire.java:73) -  << "Server: GitHub.com[\r][\n]"
+2023-03-05 00:03:21,245 +0530 [main] DEBUG (Wire.java:73) -  << "Date: Sat, 04 Mar 2023 18:33:24 GMT[\r][\n]"
+2023-03-05 00:03:21,246 +0530 [main] DEBUG (Wire.java:73) -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+2023-03-05 00:03:21,247 +0530 [main] DEBUG (Wire.java:73) -  << "Content-Length: 5940[\r][\n]"
+2023-03-05 00:03:21,248 +0530 [main] DEBUG (Wire.java:73) -  << "Cache-Control: private, max-age=60, s-maxage=60[\r][\n]"
+2023-03-05 00:03:21,249 +0530 [main] DEBUG (Wire.java:73) -  << "Vary: Accept, Authorization, Cookie, X-GitHub-OTP[\r][\n]"
+2023-03-05 00:03:21,250 +0530 [main] DEBUG (Wire.java:73) -  << "ETag: "1d0f4bf42d234bb6e07e01b578105a684b1fee4d012b5cf1d65e80636074acd8"[\r][\n]"
+2023-03-05 00:03:21,251 +0530 [main] DEBUG (Wire.java:73) -  << "X-OAuth-Scopes: delete_repo, repo[\r][\n]"
+2023-03-05 00:03:21,252 +0530 [main] DEBUG (Wire.java:73) -  << "X-Accepted-OAuth-Scopes: public_repo, repo[\r][\n]"
+2023-03-05 00:03:21,253 +0530 [main] DEBUG (Wire.java:73) -  << "Location: https://api.github.com/repos/pravinsautomation/Pravin-Repo[\r][\n]"
+2023-03-05 00:03:21,254 +0530 [main] DEBUG (Wire.java:73) -  << "X-GitHub-Media-Type: github.v3; format=json[\r][\n]"
+2023-03-05 00:03:21,255 +0530 [main] DEBUG (Wire.java:73) -  << "x-github-api-version-selected: 2022-11-28[\r][\n]"
+2023-03-05 00:03:21,256 +0530 [main] DEBUG (Wire.java:73) -  << "X-RateLimit-Limit: 5000[\r][\n]"
+2023-03-05 00:03:21,256 +0530 [main] DEBUG (Wire.java:73) -  << "X-RateLimit-Remaining: 4994[\r][\n]"
+2023-03-05 00:03:21,257 +0530 [main] DEBUG (Wire.java:73) -  << "X-RateLimit-Reset: 1677957146[\r][\n]"
+2023-03-05 00:03:21,258 +0530 [main] DEBUG (Wire.java:73) -  << "X-RateLimit-Used: 6[\r][\n]"
+2023-03-05 00:03:21,259 +0530 [main] DEBUG (Wire.java:73) -  << "X-RateLimit-Resource: core[\r][\n]"
+2023-03-05 00:03:21,260 +0530 [main] DEBUG (Wire.java:73) -  << "Access-Control-Expose-Headers: ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, X-GitHub-SSO, X-GitHub-Request-Id, Deprecation, Sunset[\r][\n]"
+2023-03-05 00:03:21,585 +0530 [main] DEBUG (Wire.java:73) -  << "Access-Control-Allow-Origin: *[\r][\n]"
+2023-03-05 00:03:21,586 +0530 [main] DEBUG (Wire.java:73) -  << "Strict-Transport-Security: max-age=31536000; includeSubdomains; preload[\r][\n]"
+2023-03-05 00:03:21,587 +0530 [main] DEBUG (Wire.java:73) -  << "X-Frame-Options: deny[\r][\n]"
+2023-03-05 00:03:21,587 +0530 [main] DEBUG (Wire.java:73) -  << "X-Content-Type-Options: nosniff[\r][\n]"
+2023-03-05 00:03:21,588 +0530 [main] DEBUG (Wire.java:73) -  << "X-XSS-Protection: 0[\r][\n]"
+2023-03-05 00:03:21,589 +0530 [main] DEBUG (Wire.java:73) -  << "Referrer-Policy: origin-when-cross-origin, strict-origin-when-cross-origin[\r][\n]"
+2023-03-05 00:03:21,589 +0530 [main] DEBUG (Wire.java:73) -  << "Content-Security-Policy: default-src 'none'[\r][\n]"
+2023-03-05 00:03:21,590 +0530 [main] DEBUG (Wire.java:73) -  << "Vary: Accept-Encoding, Accept, X-Requested-With[\r][\n]"
+2023-03-05 00:03:21,592 +0530 [main] DEBUG (Wire.java:73) -  << "X-GitHub-Request-Id: F17A:6E4F:D9429:11913C:64038EF3[\r][\n]"
+2023-03-05 00:03:21,593 +0530 [main] DEBUG (Wire.java:73) -  << "[\r][\n]"
+2023-03-05 00:03:21,596 +0530 [main] DEBUG (DefaultClientConnection.java:259) - Receiving response: HTTP/1.1 201 Created
+2023-03-05 00:03:21,597 +0530 [main] DEBUG (DefaultClientConnection.java:262) - << HTTP/1.1 201 Created
+2023-03-05 00:03:21,598 +0530 [main] DEBUG (DefaultClientConnection.java:265) - << Server: GitHub.com
+2023-03-05 00:03:21,599 +0530 [main] DEBUG (DefaultClientConnection.java:265) - << Date: Sat, 04 Mar 2023 18:33:24 GMT
+2023-03-05 00:03:21,600 +0530 [main] DEBUG (DefaultClientConnection.java:265) - << Content-Type: application/json; charset=utf-8
+2023-03-05 00:03:21,600 +0530 [main] DEBUG (DefaultClientConnection.java:265) - << Content-Length: 5940
+2023-03-05 00:03:21,601 +0530 [main] DEBUG (DefaultClientConnection.java:265) - << Cache-Control: private, max-age=60, s-maxage=60
+2023-03-05 00:03:21,602 +0530 [main] DEBUG (DefaultClientConnection.java:265) - << Vary: Accept, Authorization, Cookie, X-GitHub-OTP
+2023-03-05 00:03:21,603 +0530 [main] DEBUG (DefaultClientConnection.java:265) - << ETag: "1d0f4bf42d234bb6e07e01b578105a684b1fee4d012b5cf1d65e80636074acd8"
+2023-03-05 00:03:21,603 +0530 [main] DEBUG (DefaultClientConnection.java:265) - << X-OAuth-Scopes: delete_repo, repo
+2023-03-05 00:03:21,604 +0530 [main] DEBUG (DefaultClientConnection.java:265) - << X-Accepted-OAuth-Scopes: public_repo, repo
+2023-03-05 00:03:21,605 +0530 [main] DEBUG (DefaultClientConnection.java:265) - << Location: https://api.github.com/repos/pravinsautomation/Pravin-Repo
+2023-03-05 00:03:21,606 +0530 [main] DEBUG (DefaultClientConnection.java:265) - << X-GitHub-Media-Type: github.v3; format=json
+2023-03-05 00:03:21,607 +0530 [main] DEBUG (DefaultClientConnection.java:265) - << x-github-api-version-selected: 2022-11-28
+2023-03-05 00:03:21,608 +0530 [main] DEBUG (DefaultClientConnection.java:265) - << X-RateLimit-Limit: 5000
+2023-03-05 00:03:21,609 +0530 [main] DEBUG (DefaultClientConnection.java:265) - << X-RateLimit-Remaining: 4994
+2023-03-05 00:03:21,610 +0530 [main] DEBUG (DefaultClientConnection.java:265) - << X-RateLimit-Reset: 1677957146
+2023-03-05 00:03:21,611 +0530 [main] DEBUG (DefaultClientConnection.java:265) - << X-RateLimit-Used: 6
+2023-03-05 00:03:21,612 +0530 [main] DEBUG (DefaultClientConnection.java:265) - << X-RateLimit-Resource: core
+2023-03-05 00:03:21,613 +0530 [main] DEBUG (DefaultClientConnection.java:265) - << Access-Control-Expose-Headers: ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, X-GitHub-SSO, X-GitHub-Request-Id, Deprecation, Sunset
+2023-03-05 00:03:21,614 +0530 [main] DEBUG (DefaultClientConnection.java:265) - << Access-Control-Allow-Origin: *
+2023-03-05 00:03:21,614 +0530 [main] DEBUG (DefaultClientConnection.java:265) - << Strict-Transport-Security: max-age=31536000; includeSubdomains; preload
+2023-03-05 00:03:21,615 +0530 [main] DEBUG (DefaultClientConnection.java:265) - << X-Frame-Options: deny
+2023-03-05 00:03:21,616 +0530 [main] DEBUG (DefaultClientConnection.java:265) - << X-Content-Type-Options: nosniff
+2023-03-05 00:03:21,616 +0530 [main] DEBUG (DefaultClientConnection.java:265) - << X-XSS-Protection: 0
+2023-03-05 00:03:21,617 +0530 [main] DEBUG (DefaultClientConnection.java:265) - << Referrer-Policy: origin-when-cross-origin, strict-origin-when-cross-origin
+2023-03-05 00:03:21,618 +0530 [main] DEBUG (DefaultClientConnection.java:265) - << Content-Security-Policy: default-src 'none'
+2023-03-05 00:03:21,619 +0530 [main] DEBUG (DefaultClientConnection.java:265) - << Vary: Accept-Encoding, Accept, X-Requested-With
+2023-03-05 00:03:21,620 +0530 [main] DEBUG (DefaultClientConnection.java:265) - << X-GitHub-Request-Id: F17A:6E4F:D9429:11913C:64038EF3
+2023-03-05 00:03:21,630 +0530 [main] DEBUG (DefaultRequestDirector.java:504) - Connection can be kept alive indefinitely
+2023-03-05 00:03:21,646 +0530 [main] DEBUG (HTTPBuilder.java:553) - Parsing response as: application/json; charset=utf-8
+2023-03-05 00:03:21,647 +0530 [main] DEBUG (HTTPBuilder.java:556) - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2023-03-05 00:03:21,752 +0530 [main] DEBUG (Wire.java:87) -  << "{"id":609623782,"node_id":"R_kgDOJFYe5g","name":"Pravin-Repo","full_name":"pravinsautomation/Pravin-Repo","private":false,"owner":{"login":"pravinsautomation","id":63906966,"node_id":"MDQ6VXNlcjYzOTA2OTY2","avatar_url":"https://avatars.githubusercontent.com/u/63906966?v=4","gravatar_id":"","url":"https://api.github.com/users/pravinsautomation","html_url":"https://github.com/pravinsautomation","followers_url":"https://api.github.com/users/pravinsautomation/followers","following_url":"https://api.github.com/users/pravinsautomation/following{/other_user}","gists_url":"https://api.github.com/users/pravinsautomation/gists{/gist_id}","starred_url":"https://api.github.com/users/pravinsautomation/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/pravinsautomation/subscriptions","organizations_url":"https://api.github.com/users/pravinsautomation/orgs","repos_url":"https://api.github.com/users/pravinsautomation/repos","events_url":"https://api.github.com/users/pravinsautomation/events{/privacy}","received_events_url":"https://api.github.com/users/pravinsautomation/received_events","type":"User","site_admin":false},"html_url":"https://github.com/pravinsautomation/Pravin-Repo","description":"My API Repo","fork":false,"url":"https://api.github.com/repos/pravinsautomation/Pravin-Repo","forks_"
+2023-03-05 00:03:21,757 +0530 [main] DEBUG (Wire.java:87) -  << "url":"https://api.github.com/repos/pravinsautomation/Pravin-Repo/forks","keys_url":"https://api.github.com/repos/pravinsautomation/Pravin-Repo/keys{/key_id}","collaborators_url":"https://api.github.com/repos/pravinsautomation/Pravin-Repo/collaborators{/collaborator}","teams_url":"https://api.github.com/repos/pravinsautomation/Pravin-Repo/teams","hooks_url":"https://api.github.com/repos/pravinsautomation/Pravin-Repo/hooks","issue_events_url":"https://api.github.com/repos/pravinsautomation/Pravin-Repo/issues/events{/number}","events_url":"https://api.github.com/repos/pravinsautomation/Pravin-Repo/events","assignees_url":"https://api.github.com/repos/pravinsautomation/Pravin-Repo/assignees{/user}","branches_url":"https://api.github.com/repos/pravinsautomation/Pravin-Repo/branches{/branch}","tags_url":"https://api.github.com/repos/pravinsautomation/Pravin-Repo/tags","blobs_url":"https://api.github.com/repos/pravinsautomation/Pravin-Repo/git/blobs{/sha}","git_tags_url":"https://api.github.com/repos/pravinsautomation/Pravin-Repo/git/tags{/sha}","git_refs_url":"https://api.github.com/repos/pravinsautomation/Pravin-Repo/git/refs{/sha}","trees_url":"https://api.github.com/repos/pravinsautomation/Pravin-Repo/git/trees{/sha}","statuses_url":"https://api.github.com/repos/pravinsautomation/Pravin-Repo/statuses/{sha}","languages_url":"https://api.github.com/repo"
+2023-03-05 00:03:21,759 +0530 [main] DEBUG (Wire.java:87) -  << "s/pravinsautomation/Pravin-Repo/languages","stargazers_url":"https://api.github.com/repos/pravinsautomation/Pravin-Repo/stargazers","contributors_url":"https://api.github.com/repos/pravinsautomation/Pravin-Repo/contributors","subscribers_url":"https://api.github.com/repos/pravinsautomation/Pravin-Repo/subscribers","subscription_url":"https://api.github.com/repos/pravinsautomation/Pravin-Repo/subscription","commits_url":"https://api.github.com/repos/pravinsautomation/Pravin-Repo/commits{/sha}","git_commits_url":"https://api.github.com/repos/pravinsautomation/Pravin-Repo/git/commits{/sha}","comments_url":"https://api.github.com/repos/pravinsautomation/Pravin-Repo/comments{/number}","issue_comment_url":"https://api.github.com/repos/pravinsautomation/Pravin-Repo/issues/comments{/number}","contents_url":"https://api.github.com/repos/pravinsautomation/Pravin-Repo/contents/{+path}","compare_url":"https://api.github.com/repos/pravinsautomation/Pravin-Repo/compare/{base}...{head}","merges_url":"https://api.github.com/repos/pravinsautomation/Pravin-Repo/merges","archive_url":"https://api.github.com/repos/pravinsautomation/Pravin-Repo/{archive_format}{/ref}","downloads_url":"https://api.github.com/repos/pravinsautomation/Pravin-Repo/downloads","issues_url":"https://api.github.com/repos/pravinsautomation/Pravin-Repo/issues{/number}","pulls_url":"https://api.gi"
+2023-03-05 00:03:21,762 +0530 [main] DEBUG (Wire.java:87) -  << "thub.com/repos/pravinsautomation/Pravin-Repo/pulls{/number}","milestones_url":"https://api.github.com/repos/pravinsautomation/Pravin-Repo/milestones{/number}","notifications_url":"https://api.github.com/repos/pravinsautomation/Pravin-Repo/notifications{?since,all,participating}","labels_url":"https://api.github.com/repos/pravinsautomation/Pravin-Repo/labels{/name}","releases_url":"https://api.github.com/repos/pravinsautomation/Pravin-Repo/releases{/id}","deployments_url":"https://api.github.com/repos/pravinsautomation/Pravin-Repo/deployments","created_at":"2023-03-04T18:33:23Z","updated_at":"2023-03-04T18:33:23Z","pushed_at":"2023-03-04T18:33:24Z","git_url":"git://github.com/pravinsautomation/Pravin-Repo.git","ssh_url":"git@github.com:pravinsautomation/Pravin-Repo.git","clone_url":"https://github.com/pravinsautomation/Pravin-Repo.git","svn_url":"https://github.com/pravinsautomation/Pravin-Repo","homepage":null,"size":0,"stargazers_count":0,"watchers_count":0,"language":null,"has_issues":true,"has_projects":true,"has_downloads":true,"has_wiki":true,"has_pages":false,"has_discussions":false,"forks_count":0,"mirror_url":null,"archived":false,"disabled":false,"open_issues_count":0,"license":null,"allow_forking":true,"is_template":false,"web_commit_signoff_required":false,"topics":[],"visibility":"public","forks":0,"open_issues":0,"watchers":0,"default_"
+2023-03-05 00:03:21,764 +0530 [main] DEBUG (Wire.java:87) -  << "branch":"main","permissions":{"admin":true,"maintain":true,"push":true,"triage":true,"pull":true},"allow_squash_merge":true,"allow_merge_commit":true,"allow_rebase_merge":true,"allow_auto_merge":false,"delete_branch_on_merge":false,"allow_update_branch":false,"use_squash_pr_title_as_default":false,"squash_merge_commit_message":"COMMIT_MESSAGES","squash_merge_commit_title":"COMMIT_OR_PR_TITLE","merge_commit_message":"PR_TITLE","merge_commit_title":"MERGE_MESSAGE","network_count":0,"subscribers_count":1}"
+2023-03-05 00:03:21,765 +0530 [main] DEBUG (BasicClientConnectionManager.java:200) - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@3f8dfe74
+2023-03-05 00:03:21,766 +0530 [main] DEBUG (BasicClientConnectionManager.java:225) - Connection can be kept alive indefinitely
+2023-03-05 00:03:21,772 +0530 [main] INFO  (RestLogger.java:39) - Request Response:- {"id":609623782,"node_id":"R_kgDOJFYe5g","name":"Pravin-Repo","full_name":"pravinsautomation/Pravin-Repo","private":false,"owner":{"login":"pravinsautomation","id":63906966,"node_id":"MDQ6VXNlcjYzOTA2OTY2","avatar_url":"https://avatars.githubusercontent.com/u/63906966?v=4","gravatar_id":"","url":"https://api.github.com/users/pravinsautomation","html_url":"https://github.com/pravinsautomation","followers_url":"https://api.github.com/users/pravinsautomation/followers","following_url":"https://api.github.com/users/pravinsautomation/following{/other_user}","gists_url":"https://api.github.com/users/pravinsautomation/gists{/gist_id}","starred_url":"https://api.github.com/users/pravinsautomation/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/pravinsautomation/subscriptions","organizations_url":"https://api.github.com/users/pravinsautomation/orgs","repos_url":"https://api.github.com/users/pravinsautomation/repos","events_url":"https://api.github.com/users/pravinsautomation/events{/privacy}","received_events_url":"https://api.github.com/users/pravinsautomation/received_events","type":"User","site_admin":false},"html_url":"https://github.com/pravinsautomation/Pravin-Repo","description":"My API Repo","fork":false,"url":"https://api.github.com/repos/pravinsautomation/Pravin-Repo","forks_url":"https://api.github.com/repos/pravinsautomation/Pravin-Repo/forks","keys_url":"https://api.github.com/repos/pravinsautomation/Pravin-Repo/keys{/key_id}","collaborators_url":"https://api.github.com/repos/pravinsautomation/Pravin-Repo/collaborators{/collaborator}","teams_url":"https://api.github.com/repos/pravinsautomation/Pravin-Repo/teams","hooks_url":"https://api.github.com/repos/pravinsautomation/Pravin-Repo/hooks","issue_events_url":"https://api.github.com/repos/pravinsautomation/Pravin-Repo/issues/events{/number}","events_url":"https://api.github.com/repos/pravinsautomation/Pravin-Repo/events","assignees_url":"https://api.github.com/repos/pravinsautomation/Pravin-Repo/assignees{/user}","branches_url":"https://api.github.com/repos/pravinsautomation/Pravin-Repo/branches{/branch}","tags_url":"https://api.github.com/repos/pravinsautomation/Pravin-Repo/tags","blobs_url":"https://api.github.com/repos/pravinsautomation/Pravin-Repo/git/blobs{/sha}","git_tags_url":"https://api.github.com/repos/pravinsautomation/Pravin-Repo/git/tags{/sha}","git_refs_url":"https://api.github.com/repos/pravinsautomation/Pravin-Repo/git/refs{/sha}","trees_url":"https://api.github.com/repos/pravinsautomation/Pravin-Repo/git/trees{/sha}","statuses_url":"https://api.github.com/repos/pravinsautomation/Pravin-Repo/statuses/{sha}","languages_url":"https://api.github.com/repos/pravinsautomation/Pravin-Repo/languages","stargazers_url":"https://api.github.com/repos/pravinsautomation/Pravin-Repo/stargazers","contributors_url":"https://api.github.com/repos/pravinsautomation/Pravin-Repo/contributors","subscribers_url":"https://api.github.com/repos/pravinsautomation/Pravin-Repo/subscribers","subscription_url":"https://api.github.com/repos/pravinsautomation/Pravin-Repo/subscription","commits_url":"https://api.github.com/repos/pravinsautomation/Pravin-Repo/commits{/sha}","git_commits_url":"https://api.github.com/repos/pravinsautomation/Pravin-Repo/git/commits{/sha}","comments_url":"https://api.github.com/repos/pravinsautomation/Pravin-Repo/comments{/number}","issue_comment_url":"https://api.github.com/repos/pravinsautomation/Pravin-Repo/issues/comments{/number}","contents_url":"https://api.github.com/repos/pravinsautomation/Pravin-Repo/contents/{+path}","compare_url":"https://api.github.com/repos/pravinsautomation/Pravin-Repo/compare/{base}...{head}","merges_url":"https://api.github.com/repos/pravinsautomation/Pravin-Repo/merges","archive_url":"https://api.github.com/repos/pravinsautomation/Pravin-Repo/{archive_format}{/ref}","downloads_url":"https://api.github.com/repos/pravinsautomation/Pravin-Repo/downloads","issues_url":"https://api.github.com/repos/pravinsautomation/Pravin-Repo/issues{/number}","pulls_url":"https://api.github.com/repos/pravinsautomation/Pravin-Repo/pulls{/number}","milestones_url":"https://api.github.com/repos/pravinsautomation/Pravin-Repo/milestones{/number}","notifications_url":"https://api.github.com/repos/pravinsautomation/Pravin-Repo/notifications{?since,all,participating}","labels_url":"https://api.github.com/repos/pravinsautomation/Pravin-Repo/labels{/name}","releases_url":"https://api.github.com/repos/pravinsautomation/Pravin-Repo/releases{/id}","deployments_url":"https://api.github.com/repos/pravinsautomation/Pravin-Repo/deployments","created_at":"2023-03-04T18:33:23Z","updated_at":"2023-03-04T18:33:23Z","pushed_at":"2023-03-04T18:33:24Z","git_url":"git://github.com/pravinsautomation/Pravin-Repo.git","ssh_url":"git@github.com:pravinsautomation/Pravin-Repo.git","clone_url":"https://github.com/pravinsautomation/Pravin-Repo.git","svn_url":"https://github.com/pravinsautomation/Pravin-Repo","homepage":null,"size":0,"stargazers_count":0,"watchers_count":0,"language":null,"has_issues":true,"has_projects":true,"has_downloads":true,"has_wiki":true,"has_pages":false,"has_discussions":false,"forks_count":0,"mirror_url":null,"archived":false,"disabled":false,"open_issues_count":0,"license":null,"allow_forking":true,"is_template":false,"web_commit_signoff_required":false,"topics":[],"visibility":"public","forks":0,"open_issues":0,"watchers":0,"default_branch":"main","permissions":{"admin":true,"maintain":true,"push":true,"triage":true,"pull":true},"allow_squash_merge":true,"allow_merge_commit":true,"allow_rebase_merge":true,"allow_auto_merge":false,"delete_branch_on_merge":false,"allow_update_branch":false,"use_squash_pr_title_as_default":false,"squash_merge_commit_message":"COMMIT_MESSAGES","squash_merge_commit_title":"COMMIT_OR_PR_TITLE","merge_commit_message":"PR_TITLE","merge_commit_title":"MERGE_MESSAGE","network_count":0,"subscribers_count":1}
+2023-03-05 00:03:21,774 +0530 [main] INFO  (RestLogger.java:39) - Response IS:- {"id":609623782,"node_id":"R_kgDOJFYe5g","name":"Pravin-Repo","full_name":"pravinsautomation/Pravin-Repo","private":false,"owner":{"login":"pravinsautomation","id":63906966,"node_id":"MDQ6VXNlcjYzOTA2OTY2","avatar_url":"https://avatars.githubusercontent.com/u/63906966?v=4","gravatar_id":"","url":"https://api.github.com/users/pravinsautomation","html_url":"https://github.com/pravinsautomation","followers_url":"https://api.github.com/users/pravinsautomation/followers","following_url":"https://api.github.com/users/pravinsautomation/following{/other_user}","gists_url":"https://api.github.com/users/pravinsautomation/gists{/gist_id}","starred_url":"https://api.github.com/users/pravinsautomation/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/pravinsautomation/subscriptions","organizations_url":"https://api.github.com/users/pravinsautomation/orgs","repos_url":"https://api.github.com/users/pravinsautomation/repos","events_url":"https://api.github.com/users/pravinsautomation/events{/privacy}","received_events_url":"https://api.github.com/users/pravinsautomation/received_events","type":"User","site_admin":false},"html_url":"https://github.com/pravinsautomation/Pravin-Repo","description":"My API Repo","fork":false,"url":"https://api.github.com/repos/pravinsautomation/Pravin-Repo","forks_url":"https://api.github.com/repos/pravinsautomation/Pravin-Repo/forks","keys_url":"https://api.github.com/repos/pravinsautomation/Pravin-Repo/keys{/key_id}","collaborators_url":"https://api.github.com/repos/pravinsautomation/Pravin-Repo/collaborators{/collaborator}","teams_url":"https://api.github.com/repos/pravinsautomation/Pravin-Repo/teams","hooks_url":"https://api.github.com/repos/pravinsautomation/Pravin-Repo/hooks","issue_events_url":"https://api.github.com/repos/pravinsautomation/Pravin-Repo/issues/events{/number}","events_url":"https://api.github.com/repos/pravinsautomation/Pravin-Repo/events","assignees_url":"https://api.github.com/repos/pravinsautomation/Pravin-Repo/assignees{/user}","branches_url":"https://api.github.com/repos/pravinsautomation/Pravin-Repo/branches{/branch}","tags_url":"https://api.github.com/repos/pravinsautomation/Pravin-Repo/tags","blobs_url":"https://api.github.com/repos/pravinsautomation/Pravin-Repo/git/blobs{/sha}","git_tags_url":"https://api.github.com/repos/pravinsautomation/Pravin-Repo/git/tags{/sha}","git_refs_url":"https://api.github.com/repos/pravinsautomation/Pravin-Repo/git/refs{/sha}","trees_url":"https://api.github.com/repos/pravinsautomation/Pravin-Repo/git/trees{/sha}","statuses_url":"https://api.github.com/repos/pravinsautomation/Pravin-Repo/statuses/{sha}","languages_url":"https://api.github.com/repos/pravinsautomation/Pravin-Repo/languages","stargazers_url":"https://api.github.com/repos/pravinsautomation/Pravin-Repo/stargazers","contributors_url":"https://api.github.com/repos/pravinsautomation/Pravin-Repo/contributors","subscribers_url":"https://api.github.com/repos/pravinsautomation/Pravin-Repo/subscribers","subscription_url":"https://api.github.com/repos/pravinsautomation/Pravin-Repo/subscription","commits_url":"https://api.github.com/repos/pravinsautomation/Pravin-Repo/commits{/sha}","git_commits_url":"https://api.github.com/repos/pravinsautomation/Pravin-Repo/git/commits{/sha}","comments_url":"https://api.github.com/repos/pravinsautomation/Pravin-Repo/comments{/number}","issue_comment_url":"https://api.github.com/repos/pravinsautomation/Pravin-Repo/issues/comments{/number}","contents_url":"https://api.github.com/repos/pravinsautomation/Pravin-Repo/contents/{+path}","compare_url":"https://api.github.com/repos/pravinsautomation/Pravin-Repo/compare/{base}...{head}","merges_url":"https://api.github.com/repos/pravinsautomation/Pravin-Repo/merges","archive_url":"https://api.github.com/repos/pravinsautomation/Pravin-Repo/{archive_format}{/ref}","downloads_url":"https://api.github.com/repos/pravinsautomation/Pravin-Repo/downloads","issues_url":"https://api.github.com/repos/pravinsautomation/Pravin-Repo/issues{/number}","pulls_url":"https://api.github.com/repos/pravinsautomation/Pravin-Repo/pulls{/number}","milestones_url":"https://api.github.com/repos/pravinsautomation/Pravin-Repo/milestones{/number}","notifications_url":"https://api.github.com/repos/pravinsautomation/Pravin-Repo/notifications{?since,all,participating}","labels_url":"https://api.github.com/repos/pravinsautomation/Pravin-Repo/labels{/name}","releases_url":"https://api.github.com/repos/pravinsautomation/Pravin-Repo/releases{/id}","deployments_url":"https://api.github.com/repos/pravinsautomation/Pravin-Repo/deployments","created_at":"2023-03-04T18:33:23Z","updated_at":"2023-03-04T18:33:23Z","pushed_at":"2023-03-04T18:33:24Z","git_url":"git://github.com/pravinsautomation/Pravin-Repo.git","ssh_url":"git@github.com:pravinsautomation/Pravin-Repo.git","clone_url":"https://github.com/pravinsautomation/Pravin-Repo.git","svn_url":"https://github.com/pravinsautomation/Pravin-Repo","homepage":null,"size":0,"stargazers_count":0,"watchers_count":0,"language":null,"has_issues":true,"has_projects":true,"has_downloads":true,"has_wiki":true,"has_pages":false,"has_discussions":false,"forks_count":0,"mirror_url":null,"archived":false,"disabled":false,"open_issues_count":0,"license":null,"allow_forking":true,"is_template":false,"web_commit_signoff_required":false,"topics":[],"visibility":"public","forks":0,"open_issues":0,"watchers":0,"default_branch":"main","permissions":{"admin":true,"maintain":true,"push":true,"triage":true,"pull":true},"allow_squash_merge":true,"allow_merge_commit":true,"allow_rebase_merge":true,"allow_auto_merge":false,"delete_branch_on_merge":false,"allow_update_branch":false,"use_squash_pr_title_as_default":false,"squash_merge_commit_message":"COMMIT_MESSAGES","squash_merge_commit_title":"COMMIT_OR_PR_TITLE","merge_commit_message":"PR_TITLE","merge_commit_title":"MERGE_MESSAGE","network_count":0,"subscribers_count":1}
+2023-03-05 00:03:25,475 +0530 [main] INFO  (RestLogger.java:39) - Actual Repo Name:- Pravin-Repo
+2023-03-05 00:03:25,476 +0530 [main] INFO  (RestLogger.java:39) - Expected Repo Name:- Pravin-Repo
+2023-03-05 00:03:25,539 +0530 [main] INFO  (RestLogger.java:39) - ActualDescription:- My API Repo
+2023-03-05 00:03:25,539 +0530 [main] INFO  (RestLogger.java:39) - ExpectedDescription:- My API Repo
+2023-03-05 00:03:25,541 +0530 [main] INFO  (RestLogger.java:28) - XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+2023-03-05 00:03:25,542 +0530 [main] INFO  (RestLogger.java:29) - XXXXXXXXXXXXXXXE---N---DXXXXXXXXXXXXXXXXXXXX
+2023-03-05 00:03:25,542 +0530 [main] INFO  (RestLogger.java:30) - XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+2023-03-05 00:03:25,543 +0530 [main] INFO  (RestLogger.java:31) - X
+2023-03-05 00:03:25,543 +0530 [main] INFO  (RestLogger.java:32) - X
+2023-03-05 00:03:25,543 +0530 [main] INFO  (RestLogger.java:33) - X
+2023-03-05 00:03:25,544 +0530 [main] INFO  (RestLogger.java:34) - X
+2023-03-05 00:03:25,544 +0530 [main] INFO  (RestLogger.java:35) - X
+2023-03-05 00:03:25,595 +0530 [main] INFO  (RestLogger.java:19) - *****************************************************
+2023-03-05 00:03:25,595 +0530 [main] INFO  (RestLogger.java:20) - *****************************************************
+2023-03-05 00:03:25,596 +0530 [main] INFO  (RestLogger.java:21) - $$$$$$$$$$$$$$$$$Verify create repo API$$$$$$$$$$$$$$$$$$$
+2023-03-05 00:03:25,597 +0530 [main] INFO  (RestLogger.java:22) - *****************************************************
+2023-03-05 00:03:25,597 +0530 [main] INFO  (RestLogger.java:23) - *****************************************************
+2023-03-05 00:03:25,619 +0530 [main] INFO  (RestLogger.java:39) - base URI:- https://api.github.com
+2023-03-05 00:03:25,620 +0530 [main] INFO  (RestLogger.java:39) - Resource Path:- /user/repos
+2023-03-05 00:03:25,620 +0530 [main] INFO  (RestLogger.java:39) - Request Payload:- {
+  "name" : "Shruti-Repo",
+  "description" : "Shruti API Repo"
+}
+2023-03-05 00:03:25,650 +0530 [main] DEBUG (BasicClientConnectionManager.java:161) - Get connection for route {s}->https://api.github.com:443
+2023-03-05 00:03:25,652 +0530 [main] DEBUG (DefaultClientConnectionOperator.java:177) - Connecting to api.github.com:443
+2023-03-05 00:03:25,754 +0530 [main] DEBUG (RequestAddCookies.java:123) - CookieSpec selected: ignoreCookies
+2023-03-05 00:03:25,755 +0530 [main] DEBUG (RequestAuthCache.java:77) - Auth cache not set in the context
+2023-03-05 00:03:25,756 +0530 [main] DEBUG (RequestProxyAuthentication.java:89) - Proxy auth state: UNCHALLENGED
+2023-03-05 00:03:25,756 +0530 [main] DEBUG (DefaultRequestDirector.java:677) - Attempt 1 to execute request
+2023-03-05 00:03:25,757 +0530 [main] DEBUG (DefaultClientConnection.java:274) - Sending request: POST /user/repos HTTP/1.1
+2023-03-05 00:03:25,758 +0530 [main] DEBUG (Wire.java:73) -  >> "POST /user/repos HTTP/1.1[\r][\n]"
+2023-03-05 00:03:25,759 +0530 [main] DEBUG (Wire.java:73) -  >> "Authorization: Bearer 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[\r][\n]"
+2023-03-05 00:03:25,760 +0530 [main] DEBUG (Wire.java:73) -  >> "Accept: */*[\r][\n]"
+2023-03-05 00:03:25,761 +0530 [main] DEBUG (Wire.java:73) -  >> "Content-Type: application/json[\r][\n]"
+2023-03-05 00:03:25,761 +0530 [main] DEBUG (Wire.java:73) -  >> "Content-Length: 68[\r][\n]"
+2023-03-05 00:03:25,762 +0530 [main] DEBUG (Wire.java:73) -  >> "Host: api.github.com[\r][\n]"
+2023-03-05 00:03:25,762 +0530 [main] DEBUG (Wire.java:73) -  >> "Connection: Keep-Alive[\r][\n]"
+2023-03-05 00:03:25,763 +0530 [main] DEBUG (Wire.java:73) -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/15.0.1)[\r][\n]"
+2023-03-05 00:03:25,763 +0530 [main] DEBUG (Wire.java:73) -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2023-03-05 00:03:25,764 +0530 [main] DEBUG (Wire.java:73) -  >> "[\r][\n]"
+2023-03-05 00:03:25,764 +0530 [main] DEBUG (DefaultClientConnection.java:278) - >> POST /user/repos HTTP/1.1
+2023-03-05 00:03:25,765 +0530 [main] DEBUG (DefaultClientConnection.java:281) - >> Authorization: Bearer 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
+2023-03-05 00:03:25,765 +0530 [main] DEBUG (DefaultClientConnection.java:281) - >> Accept: */*
+2023-03-05 00:03:25,766 +0530 [main] DEBUG (DefaultClientConnection.java:281) - >> Content-Type: application/json
+2023-03-05 00:03:25,766 +0530 [main] DEBUG (DefaultClientConnection.java:281) - >> Content-Length: 68
+2023-03-05 00:03:25,767 +0530 [main] DEBUG (DefaultClientConnection.java:281) - >> Host: api.github.com
+2023-03-05 00:03:25,767 +0530 [main] DEBUG (DefaultClientConnection.java:281) - >> Connection: Keep-Alive
+2023-03-05 00:03:25,768 +0530 [main] DEBUG (DefaultClientConnection.java:281) - >> User-Agent: Apache-HttpClient/4.5.13 (Java/15.0.1)
+2023-03-05 00:03:25,769 +0530 [main] DEBUG (DefaultClientConnection.java:281) - >> Accept-Encoding: gzip,deflate
+2023-03-05 00:03:25,770 +0530 [main] DEBUG (Wire.java:73) -  >> "{[\r][\n]"
+2023-03-05 00:03:25,771 +0530 [main] DEBUG (Wire.java:73) -  >> "  "name" : "Shruti-Repo",[\r][\n]"
+2023-03-05 00:03:25,771 +0530 [main] DEBUG (Wire.java:73) -  >> "  "description" : "Shruti API Repo"[\r][\n]"
+2023-03-05 00:03:25,772 +0530 [main] DEBUG (Wire.java:87) -  >> "}"
+2023-03-05 00:03:26,966 +0530 [main] DEBUG (Wire.java:73) -  << "HTTP/1.1 201 Created[\r][\n]"
+2023-03-05 00:03:26,967 +0530 [main] DEBUG (Wire.java:73) -  << "Server: GitHub.com[\r][\n]"
+2023-03-05 00:03:26,968 +0530 [main] DEBUG (Wire.java:73) -  << "Date: Sat, 04 Mar 2023 18:33:30 GMT[\r][\n]"
+2023-03-05 00:03:26,969 +0530 [main] DEBUG (Wire.java:73) -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+2023-03-05 00:03:26,969 +0530 [main] DEBUG (Wire.java:73) -  << "Content-Length: 5944[\r][\n]"
+2023-03-05 00:03:26,970 +0530 [main] DEBUG (Wire.java:73) -  << "Cache-Control: private, max-age=60, s-maxage=60[\r][\n]"
+2023-03-05 00:03:26,971 +0530 [main] DEBUG (Wire.java:73) -  << "Vary: Accept, Authorization, Cookie, X-GitHub-OTP[\r][\n]"
+2023-03-05 00:03:26,971 +0530 [main] DEBUG (Wire.java:73) -  << "ETag: "55d3b248d8140976fc938d65a5f8adf619a0a77f9191cf69bddeb23ee9181281"[\r][\n]"
+2023-03-05 00:03:26,972 +0530 [main] DEBUG (Wire.java:73) -  << "X-OAuth-Scopes: delete_repo, repo[\r][\n]"
+2023-03-05 00:03:26,972 +0530 [main] DEBUG (Wire.java:73) -  << "X-Accepted-OAuth-Scopes: public_repo, repo[\r][\n]"
+2023-03-05 00:03:26,973 +0530 [main] DEBUG (Wire.java:73) -  << "Location: https://api.github.com/repos/pravinsautomation/Shruti-Repo[\r][\n]"
+2023-03-05 00:03:26,974 +0530 [main] DEBUG (Wire.java:73) -  << "X-GitHub-Media-Type: github.v3; format=json[\r][\n]"
+2023-03-05 00:03:26,974 +0530 [main] DEBUG (Wire.java:73) -  << "x-github-api-version-selected: 2022-11-28[\r][\n]"
+2023-03-05 00:03:26,975 +0530 [main] DEBUG (Wire.java:73) -  << "X-RateLimit-Limit: 5000[\r][\n]"
+2023-03-05 00:03:26,976 +0530 [main] DEBUG (Wire.java:73) -  << "X-RateLimit-Remaining: 4993[\r][\n]"
+2023-03-05 00:03:26,976 +0530 [main] DEBUG (Wire.java:73) -  << "X-RateLimit-Reset: 1677957146[\r][\n]"
+2023-03-05 00:03:26,977 +0530 [main] DEBUG (Wire.java:73) -  << "X-RateLimit-Used: 7[\r][\n]"
+2023-03-05 00:03:26,978 +0530 [main] DEBUG (Wire.java:73) -  << "X-RateLimit-Resource: core[\r][\n]"
+2023-03-05 00:03:26,978 +0530 [main] DEBUG (Wire.java:73) -  << "Access-Control-Expose-Headers: ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, X-GitHub-SSO, X-GitHub-Request-Id, Deprecation, Sunset[\r][\n]"
+2023-03-05 00:03:26,979 +0530 [main] DEBUG (Wire.java:73) -  << "Access-Control-Allow-Origin: *[\r][\n]"
+2023-03-05 00:03:26,979 +0530 [main] DEBUG (Wire.java:73) -  << "Strict-Transport-Security: max-age=31536000; includeSubdomains; preload[\r][\n]"
+2023-03-05 00:03:26,980 +0530 [main] DEBUG (Wire.java:73) -  << "X-Frame-Options: deny[\r][\n]"
+2023-03-05 00:03:26,982 +0530 [main] DEBUG (Wire.java:73) -  << "X-Content-Type-Options: nosniff[\r][\n]"
+2023-03-05 00:03:26,983 +0530 [main] DEBUG (Wire.java:73) -  << "X-XSS-Protection: 0[\r][\n]"
+2023-03-05 00:03:26,983 +0530 [main] DEBUG (Wire.java:73) -  << "Referrer-Policy: origin-when-cross-origin, strict-origin-when-cross-origin[\r][\n]"
+2023-03-05 00:03:26,984 +0530 [main] DEBUG (Wire.java:73) -  << "Content-Security-Policy: default-src 'none'[\r][\n]"
+2023-03-05 00:03:26,985 +0530 [main] DEBUG (Wire.java:73) -  << "Vary: Accept-Encoding, Accept, X-Requested-With[\r][\n]"
+2023-03-05 00:03:26,986 +0530 [main] DEBUG (Wire.java:73) -  << "X-GitHub-Request-Id: F17B:28D7:8AFDF:E3D4C:64038EF9[\r][\n]"
+2023-03-05 00:03:26,987 +0530 [main] DEBUG (Wire.java:73) -  << "[\r][\n]"
+2023-03-05 00:03:26,988 +0530 [main] DEBUG (DefaultClientConnection.java:259) - Receiving response: HTTP/1.1 201 Created
+2023-03-05 00:03:26,988 +0530 [main] DEBUG (DefaultClientConnection.java:262) - << HTTP/1.1 201 Created
+2023-03-05 00:03:26,988 +0530 [main] DEBUG (DefaultClientConnection.java:265) - << Server: GitHub.com
+2023-03-05 00:03:26,989 +0530 [main] DEBUG (DefaultClientConnection.java:265) - << Date: Sat, 04 Mar 2023 18:33:30 GMT
+2023-03-05 00:03:26,990 +0530 [main] DEBUG (DefaultClientConnection.java:265) - << Content-Type: application/json; charset=utf-8
+2023-03-05 00:03:26,990 +0530 [main] DEBUG (DefaultClientConnection.java:265) - << Content-Length: 5944
+2023-03-05 00:03:26,991 +0530 [main] DEBUG (DefaultClientConnection.java:265) - << Cache-Control: private, max-age=60, s-maxage=60
+2023-03-05 00:03:26,999 +0530 [main] DEBUG (DefaultClientConnection.java:265) - << Vary: Accept, Authorization, Cookie, X-GitHub-OTP
+2023-03-05 00:03:27,000 +0530 [main] DEBUG (DefaultClientConnection.java:265) - << ETag: "55d3b248d8140976fc938d65a5f8adf619a0a77f9191cf69bddeb23ee9181281"
+2023-03-05 00:03:27,001 +0530 [main] DEBUG (DefaultClientConnection.java:265) - << X-OAuth-Scopes: delete_repo, repo
+2023-03-05 00:03:27,002 +0530 [main] DEBUG (DefaultClientConnection.java:265) - << X-Accepted-OAuth-Scopes: public_repo, repo
+2023-03-05 00:03:27,003 +0530 [main] DEBUG (DefaultClientConnection.java:265) - << Location: https://api.github.com/repos/pravinsautomation/Shruti-Repo
+2023-03-05 00:03:27,003 +0530 [main] DEBUG (DefaultClientConnection.java:265) - << X-GitHub-Media-Type: github.v3; format=json
+2023-03-05 00:03:27,004 +0530 [main] DEBUG (DefaultClientConnection.java:265) - << x-github-api-version-selected: 2022-11-28
+2023-03-05 00:03:27,004 +0530 [main] DEBUG (DefaultClientConnection.java:265) - << X-RateLimit-Limit: 5000
+2023-03-05 00:03:27,005 +0530 [main] DEBUG (DefaultClientConnection.java:265) - << X-RateLimit-Remaining: 4993
+2023-03-05 00:03:27,005 +0530 [main] DEBUG (DefaultClientConnection.java:265) - << X-RateLimit-Reset: 1677957146
+2023-03-05 00:03:27,006 +0530 [main] DEBUG (DefaultClientConnection.java:265) - << X-RateLimit-Used: 7
+2023-03-05 00:03:27,006 +0530 [main] DEBUG (DefaultClientConnection.java:265) - << X-RateLimit-Resource: core
+2023-03-05 00:03:27,007 +0530 [main] DEBUG (DefaultClientConnection.java:265) - << Access-Control-Expose-Headers: ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, X-GitHub-SSO, X-GitHub-Request-Id, Deprecation, Sunset
+2023-03-05 00:03:27,007 +0530 [main] DEBUG (DefaultClientConnection.java:265) - << Access-Control-Allow-Origin: *
+2023-03-05 00:03:27,008 +0530 [main] DEBUG (DefaultClientConnection.java:265) - << Strict-Transport-Security: max-age=31536000; includeSubdomains; preload
+2023-03-05 00:03:27,008 +0530 [main] DEBUG (DefaultClientConnection.java:265) - << X-Frame-Options: deny
+2023-03-05 00:03:27,008 +0530 [main] DEBUG (DefaultClientConnection.java:265) - << X-Content-Type-Options: nosniff
+2023-03-05 00:03:27,009 +0530 [main] DEBUG (DefaultClientConnection.java:265) - << X-XSS-Protection: 0
+2023-03-05 00:03:27,009 +0530 [main] DEBUG (DefaultClientConnection.java:265) - << Referrer-Policy: origin-when-cross-origin, strict-origin-when-cross-origin
+2023-03-05 00:03:27,010 +0530 [main] DEBUG (DefaultClientConnection.java:265) - << Content-Security-Policy: default-src 'none'
+2023-03-05 00:03:27,011 +0530 [main] DEBUG (DefaultClientConnection.java:265) - << Vary: Accept-Encoding, Accept, X-Requested-With
+2023-03-05 00:03:27,011 +0530 [main] DEBUG (DefaultClientConnection.java:265) - << X-GitHub-Request-Id: F17B:28D7:8AFDF:E3D4C:64038EF9
+2023-03-05 00:03:27,012 +0530 [main] DEBUG (DefaultRequestDirector.java:504) - Connection can be kept alive indefinitely
+2023-03-05 00:03:27,013 +0530 [main] DEBUG (HTTPBuilder.java:553) - Parsing response as: application/json; charset=utf-8
+2023-03-05 00:03:27,014 +0530 [main] DEBUG (HTTPBuilder.java:556) - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2023-03-05 00:03:27,017 +0530 [main] DEBUG (Wire.java:87) -  << "{"id":609623805,"node_id":"R_kgDOJFYe_Q","name":"Shruti-Repo","full_name":"pravinsautomation/Shruti-Repo","private":false,"owner":{"login":"pravinsautomation","id":63906966,"node_id":"MDQ6VXNlcjYzOTA2OTY2","avatar_url":"https://avatars.githubusercontent.com/u/63906966?v=4","gravatar_id":"","url":"https://api.github.com/users/pravinsautomation","html_url":"https://github.com/pravinsautomation","followers_url":"https://api.github.com/users/pravinsautomation/followers","following_url":"https://api.github.com/users/pravinsautomation/following{/other_user}","gists_url":"https://api.github.com/users/pravinsautomation/gists{/gist_id}","starred_url":"https://api.github.com/users/pravinsautomation/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/pravinsautomation/subscriptions","organizations_url":"https://api.github.com/users/pravinsautomation/orgs","repos_url":"https://api.github.com/users/pravinsautomation/repos","events_url":"https://api.github.com/users/pravinsautomation/events{/privacy}","received_events_url":"https://api.github.com/users/pravinsautomation/received_events","type":"User","site_admin":false},"html_url":"https://github.com/pravinsautomation/Shruti-Repo","description":"Shruti API Repo","fork":false,"url":"https://api.github.com/repos/pravinsautomation/Shruti-Repo","for"
+2023-03-05 00:03:27,019 +0530 [main] DEBUG (Wire.java:87) -  << "ks_url":"https://api.github.com/repos/pravinsautomation/Shruti-Repo/forks","keys_url":"https://api.github.com/repos/pravinsautomation/Shruti-Repo/keys{/key_id}","collaborators_url":"https://api.github.com/repos/pravinsautomation/Shruti-Repo/collaborators{/collaborator}","teams_url":"https://api.github.com/repos/pravinsautomation/Shruti-Repo/teams","hooks_url":"https://api.github.com/repos/pravinsautomation/Shruti-Repo/hooks","issue_events_url":"https://api.github.com/repos/pravinsautomation/Shruti-Repo/issues/events{/number}","events_url":"https://api.github.com/repos/pravinsautomation/Shruti-Repo/events","assignees_url":"https://api.github.com/repos/pravinsautomation/Shruti-Repo/assignees{/user}","branches_url":"https://api.github.com/repos/pravinsautomation/Shruti-Repo/branches{/branch}","tags_url":"https://api.github.com/repos/pravinsautomation/Shruti-Repo/tags","blobs_url":"https://api.github.com/repos/pravinsautomation/Shruti-Repo/git/blobs{/sha}","git_tags_url":"https://api.github.com/repos/pravinsautomation/Shruti-Repo/git/tags{/sha}","git_refs_url":"https://api.github.com/repos/pravinsautomation/Shruti-Repo/git/refs{/sha}","trees_url":"https://api.github.com/repos/pravinsautomation/Shruti-Repo/git/trees{/sha}","statuses_url":"https://api.github.com/repos/pravinsautomation/Shruti-Repo/statuses/{sha}","languages_url":"https://api.github.com/r"
+2023-03-05 00:03:27,021 +0530 [main] DEBUG (Wire.java:87) -  << "epos/pravinsautomation/Shruti-Repo/languages","stargazers_url":"https://api.github.com/repos/pravinsautomation/Shruti-Repo/stargazers","contributors_url":"https://api.github.com/repos/pravinsautomation/Shruti-Repo/contributors","subscribers_url":"https://api.github.com/repos/pravinsautomation/Shruti-Repo/subscribers","subscription_url":"https://api.github.com/repos/pravinsautomation/Shruti-Repo/subscription","commits_url":"https://api.github.com/repos/pravinsautomation/Shruti-Repo/commits{/sha}","git_commits_url":"https://api.github.com/repos/pravinsautomation/Shruti-Repo/git/commits{/sha}","comments_url":"https://api.github.com/repos/pravinsautomation/Shruti-Repo/comments{/number}","issue_comment_url":"https://api.github.com/repos/pravinsautomation/Shruti-Repo/issues/comments{/number}","contents_url":"https://api.github.com/repos/pravinsautomation/Shruti-Repo/contents/{+path}","compare_url":"https://api.github.com/repos/pravinsautomation/Shruti-Repo/compare/{base}...{head}","merges_url":"https://api.github.com/repos/pravinsautomation/Shruti-Repo/merges","archive_url":"https://api.github.com/repos/pravinsautomation/Shruti-Repo/{archive_format}{/ref}","downloads_url":"https://api.github.com/repos/pravinsautomation/Shruti-Repo/downloads","issues_url":"https://api.github.com/repos/pravinsautomation/Shruti-Repo/issues{/number}","pulls_url":"https://api"
+2023-03-05 00:03:27,023 +0530 [main] DEBUG (Wire.java:87) -  << ".github.com/repos/pravinsautomation/Shruti-Repo/pulls{/number}","milestones_url":"https://api.github.com/repos/pravinsautomation/Shruti-Repo/milestones{/number}","notifications_url":"https://api.github.com/repos/pravinsautomation/Shruti-Repo/notifications{?since,all,participating}","labels_url":"https://api.github.com/repos/pravinsautomation/Shruti-Repo/labels{/name}","releases_url":"https://api.github.com/repos/pravinsautomation/Shruti-Repo/releases{/id}","deployments_url":"https://api.github.com/repos/pravinsautomation/Shruti-Repo/deployments","created_at":"2023-03-04T18:33:29Z","updated_at":"2023-03-04T18:33:29Z","pushed_at":"2023-03-04T18:33:29Z","git_url":"git://github.com/pravinsautomation/Shruti-Repo.git","ssh_url":"git@github.com:pravinsautomation/Shruti-Repo.git","clone_url":"https://github.com/pravinsautomation/Shruti-Repo.git","svn_url":"https://github.com/pravinsautomation/Shruti-Repo","homepage":null,"size":0,"stargazers_count":0,"watchers_count":0,"language":null,"has_issues":true,"has_projects":true,"has_downloads":true,"has_wiki":true,"has_pages":false,"has_discussions":false,"forks_count":0,"mirror_url":null,"archived":false,"disabled":false,"open_issues_count":0,"license":null,"allow_forking":true,"is_template":false,"web_commit_signoff_required":false,"topics":[],"visibility":"public","forks":0,"open_issues":0,"watchers":0,"defau"
+2023-03-05 00:03:27,024 +0530 [main] DEBUG (Wire.java:87) -  << "lt_branch":"main","permissions":{"admin":true,"maintain":true,"push":true,"triage":true,"pull":true},"allow_squash_merge":true,"allow_merge_commit":true,"allow_rebase_merge":true,"allow_auto_merge":false,"delete_branch_on_merge":false,"allow_update_branch":false,"use_squash_pr_title_as_default":false,"squash_merge_commit_message":"COMMIT_MESSAGES","squash_merge_commit_title":"COMMIT_OR_PR_TITLE","merge_commit_message":"PR_TITLE","merge_commit_title":"MERGE_MESSAGE","network_count":0,"subscribers_count":1}"
+2023-03-05 00:03:27,024 +0530 [main] DEBUG (BasicClientConnectionManager.java:200) - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@15a8cebd
+2023-03-05 00:03:27,025 +0530 [main] DEBUG (BasicClientConnectionManager.java:225) - Connection can be kept alive indefinitely
+2023-03-05 00:03:27,025 +0530 [main] INFO  (RestLogger.java:39) - Request Response:- {"id":609623805,"node_id":"R_kgDOJFYe_Q","name":"Shruti-Repo","full_name":"pravinsautomation/Shruti-Repo","private":false,"owner":{"login":"pravinsautomation","id":63906966,"node_id":"MDQ6VXNlcjYzOTA2OTY2","avatar_url":"https://avatars.githubusercontent.com/u/63906966?v=4","gravatar_id":"","url":"https://api.github.com/users/pravinsautomation","html_url":"https://github.com/pravinsautomation","followers_url":"https://api.github.com/users/pravinsautomation/followers","following_url":"https://api.github.com/users/pravinsautomation/following{/other_user}","gists_url":"https://api.github.com/users/pravinsautomation/gists{/gist_id}","starred_url":"https://api.github.com/users/pravinsautomation/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/pravinsautomation/subscriptions","organizations_url":"https://api.github.com/users/pravinsautomation/orgs","repos_url":"https://api.github.com/users/pravinsautomation/repos","events_url":"https://api.github.com/users/pravinsautomation/events{/privacy}","received_events_url":"https://api.github.com/users/pravinsautomation/received_events","type":"User","site_admin":false},"html_url":"https://github.com/pravinsautomation/Shruti-Repo","description":"Shruti API Repo","fork":false,"url":"https://api.github.com/repos/pravinsautomation/Shruti-Repo","forks_url":"https://api.github.com/repos/pravinsautomation/Shruti-Repo/forks","keys_url":"https://api.github.com/repos/pravinsautomation/Shruti-Repo/keys{/key_id}","collaborators_url":"https://api.github.com/repos/pravinsautomation/Shruti-Repo/collaborators{/collaborator}","teams_url":"https://api.github.com/repos/pravinsautomation/Shruti-Repo/teams","hooks_url":"https://api.github.com/repos/pravinsautomation/Shruti-Repo/hooks","issue_events_url":"https://api.github.com/repos/pravinsautomation/Shruti-Repo/issues/events{/number}","events_url":"https://api.github.com/repos/pravinsautomation/Shruti-Repo/events","assignees_url":"https://api.github.com/repos/pravinsautomation/Shruti-Repo/assignees{/user}","branches_url":"https://api.github.com/repos/pravinsautomation/Shruti-Repo/branches{/branch}","tags_url":"https://api.github.com/repos/pravinsautomation/Shruti-Repo/tags","blobs_url":"https://api.github.com/repos/pravinsautomation/Shruti-Repo/git/blobs{/sha}","git_tags_url":"https://api.github.com/repos/pravinsautomation/Shruti-Repo/git/tags{/sha}","git_refs_url":"https://api.github.com/repos/pravinsautomation/Shruti-Repo/git/refs{/sha}","trees_url":"https://api.github.com/repos/pravinsautomation/Shruti-Repo/git/trees{/sha}","statuses_url":"https://api.github.com/repos/pravinsautomation/Shruti-Repo/statuses/{sha}","languages_url":"https://api.github.com/repos/pravinsautomation/Shruti-Repo/languages","stargazers_url":"https://api.github.com/repos/pravinsautomation/Shruti-Repo/stargazers","contributors_url":"https://api.github.com/repos/pravinsautomation/Shruti-Repo/contributors","subscribers_url":"https://api.github.com/repos/pravinsautomation/Shruti-Repo/subscribers","subscription_url":"https://api.github.com/repos/pravinsautomation/Shruti-Repo/subscription","commits_url":"https://api.github.com/repos/pravinsautomation/Shruti-Repo/commits{/sha}","git_commits_url":"https://api.github.com/repos/pravinsautomation/Shruti-Repo/git/commits{/sha}","comments_url":"https://api.github.com/repos/pravinsautomation/Shruti-Repo/comments{/number}","issue_comment_url":"https://api.github.com/repos/pravinsautomation/Shruti-Repo/issues/comments{/number}","contents_url":"https://api.github.com/repos/pravinsautomation/Shruti-Repo/contents/{+path}","compare_url":"https://api.github.com/repos/pravinsautomation/Shruti-Repo/compare/{base}...{head}","merges_url":"https://api.github.com/repos/pravinsautomation/Shruti-Repo/merges","archive_url":"https://api.github.com/repos/pravinsautomation/Shruti-Repo/{archive_format}{/ref}","downloads_url":"https://api.github.com/repos/pravinsautomation/Shruti-Repo/downloads","issues_url":"https://api.github.com/repos/pravinsautomation/Shruti-Repo/issues{/number}","pulls_url":"https://api.github.com/repos/pravinsautomation/Shruti-Repo/pulls{/number}","milestones_url":"https://api.github.com/repos/pravinsautomation/Shruti-Repo/milestones{/number}","notifications_url":"https://api.github.com/repos/pravinsautomation/Shruti-Repo/notifications{?since,all,participating}","labels_url":"https://api.github.com/repos/pravinsautomation/Shruti-Repo/labels{/name}","releases_url":"https://api.github.com/repos/pravinsautomation/Shruti-Repo/releases{/id}","deployments_url":"https://api.github.com/repos/pravinsautomation/Shruti-Repo/deployments","created_at":"2023-03-04T18:33:29Z","updated_at":"2023-03-04T18:33:29Z","pushed_at":"2023-03-04T18:33:29Z","git_url":"git://github.com/pravinsautomation/Shruti-Repo.git","ssh_url":"git@github.com:pravinsautomation/Shruti-Repo.git","clone_url":"https://github.com/pravinsautomation/Shruti-Repo.git","svn_url":"https://github.com/pravinsautomation/Shruti-Repo","homepage":null,"size":0,"stargazers_count":0,"watchers_count":0,"language":null,"has_issues":true,"has_projects":true,"has_downloads":true,"has_wiki":true,"has_pages":false,"has_discussions":false,"forks_count":0,"mirror_url":null,"archived":false,"disabled":false,"open_issues_count":0,"license":null,"allow_forking":true,"is_template":false,"web_commit_signoff_required":false,"topics":[],"visibility":"public","forks":0,"open_issues":0,"watchers":0,"default_branch":"main","permissions":{"admin":true,"maintain":true,"push":true,"triage":true,"pull":true},"allow_squash_merge":true,"allow_merge_commit":true,"allow_rebase_merge":true,"allow_auto_merge":false,"delete_branch_on_merge":false,"allow_update_branch":false,"use_squash_pr_title_as_default":false,"squash_merge_commit_message":"COMMIT_MESSAGES","squash_merge_commit_title":"COMMIT_OR_PR_TITLE","merge_commit_message":"PR_TITLE","merge_commit_title":"MERGE_MESSAGE","network_count":0,"subscribers_count":1}
+2023-03-05 00:03:27,026 +0530 [main] INFO  (RestLogger.java:39) - Response IS:- {"id":609623805,"node_id":"R_kgDOJFYe_Q","name":"Shruti-Repo","full_name":"pravinsautomation/Shruti-Repo","private":false,"owner":{"login":"pravinsautomation","id":63906966,"node_id":"MDQ6VXNlcjYzOTA2OTY2","avatar_url":"https://avatars.githubusercontent.com/u/63906966?v=4","gravatar_id":"","url":"https://api.github.com/users/pravinsautomation","html_url":"https://github.com/pravinsautomation","followers_url":"https://api.github.com/users/pravinsautomation/followers","following_url":"https://api.github.com/users/pravinsautomation/following{/other_user}","gists_url":"https://api.github.com/users/pravinsautomation/gists{/gist_id}","starred_url":"https://api.github.com/users/pravinsautomation/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/pravinsautomation/subscriptions","organizations_url":"https://api.github.com/users/pravinsautomation/orgs","repos_url":"https://api.github.com/users/pravinsautomation/repos","events_url":"https://api.github.com/users/pravinsautomation/events{/privacy}","received_events_url":"https://api.github.com/users/pravinsautomation/received_events","type":"User","site_admin":false},"html_url":"https://github.com/pravinsautomation/Shruti-Repo","description":"Shruti API Repo","fork":false,"url":"https://api.github.com/repos/pravinsautomation/Shruti-Repo","forks_url":"https://api.github.com/repos/pravinsautomation/Shruti-Repo/forks","keys_url":"https://api.github.com/repos/pravinsautomation/Shruti-Repo/keys{/key_id}","collaborators_url":"https://api.github.com/repos/pravinsautomation/Shruti-Repo/collaborators{/collaborator}","teams_url":"https://api.github.com/repos/pravinsautomation/Shruti-Repo/teams","hooks_url":"https://api.github.com/repos/pravinsautomation/Shruti-Repo/hooks","issue_events_url":"https://api.github.com/repos/pravinsautomation/Shruti-Repo/issues/events{/number}","events_url":"https://api.github.com/repos/pravinsautomation/Shruti-Repo/events","assignees_url":"https://api.github.com/repos/pravinsautomation/Shruti-Repo/assignees{/user}","branches_url":"https://api.github.com/repos/pravinsautomation/Shruti-Repo/branches{/branch}","tags_url":"https://api.github.com/repos/pravinsautomation/Shruti-Repo/tags","blobs_url":"https://api.github.com/repos/pravinsautomation/Shruti-Repo/git/blobs{/sha}","git_tags_url":"https://api.github.com/repos/pravinsautomation/Shruti-Repo/git/tags{/sha}","git_refs_url":"https://api.github.com/repos/pravinsautomation/Shruti-Repo/git/refs{/sha}","trees_url":"https://api.github.com/repos/pravinsautomation/Shruti-Repo/git/trees{/sha}","statuses_url":"https://api.github.com/repos/pravinsautomation/Shruti-Repo/statuses/{sha}","languages_url":"https://api.github.com/repos/pravinsautomation/Shruti-Repo/languages","stargazers_url":"https://api.github.com/repos/pravinsautomation/Shruti-Repo/stargazers","contributors_url":"https://api.github.com/repos/pravinsautomation/Shruti-Repo/contributors","subscribers_url":"https://api.github.com/repos/pravinsautomation/Shruti-Repo/subscribers","subscription_url":"https://api.github.com/repos/pravinsautomation/Shruti-Repo/subscription","commits_url":"https://api.github.com/repos/pravinsautomation/Shruti-Repo/commits{/sha}","git_commits_url":"https://api.github.com/repos/pravinsautomation/Shruti-Repo/git/commits{/sha}","comments_url":"https://api.github.com/repos/pravinsautomation/Shruti-Repo/comments{/number}","issue_comment_url":"https://api.github.com/repos/pravinsautomation/Shruti-Repo/issues/comments{/number}","contents_url":"https://api.github.com/repos/pravinsautomation/Shruti-Repo/contents/{+path}","compare_url":"https://api.github.com/repos/pravinsautomation/Shruti-Repo/compare/{base}...{head}","merges_url":"https://api.github.com/repos/pravinsautomation/Shruti-Repo/merges","archive_url":"https://api.github.com/repos/pravinsautomation/Shruti-Repo/{archive_format}{/ref}","downloads_url":"https://api.github.com/repos/pravinsautomation/Shruti-Repo/downloads","issues_url":"https://api.github.com/repos/pravinsautomation/Shruti-Repo/issues{/number}","pulls_url":"https://api.github.com/repos/pravinsautomation/Shruti-Repo/pulls{/number}","milestones_url":"https://api.github.com/repos/pravinsautomation/Shruti-Repo/milestones{/number}","notifications_url":"https://api.github.com/repos/pravinsautomation/Shruti-Repo/notifications{?since,all,participating}","labels_url":"https://api.github.com/repos/pravinsautomation/Shruti-Repo/labels{/name}","releases_url":"https://api.github.com/repos/pravinsautomation/Shruti-Repo/releases{/id}","deployments_url":"https://api.github.com/repos/pravinsautomation/Shruti-Repo/deployments","created_at":"2023-03-04T18:33:29Z","updated_at":"2023-03-04T18:33:29Z","pushed_at":"2023-03-04T18:33:29Z","git_url":"git://github.com/pravinsautomation/Shruti-Repo.git","ssh_url":"git@github.com:pravinsautomation/Shruti-Repo.git","clone_url":"https://github.com/pravinsautomation/Shruti-Repo.git","svn_url":"https://github.com/pravinsautomation/Shruti-Repo","homepage":null,"size":0,"stargazers_count":0,"watchers_count":0,"language":null,"has_issues":true,"has_projects":true,"has_downloads":true,"has_wiki":true,"has_pages":false,"has_discussions":false,"forks_count":0,"mirror_url":null,"archived":false,"disabled":false,"open_issues_count":0,"license":null,"allow_forking":true,"is_template":false,"web_commit_signoff_required":false,"topics":[],"visibility":"public","forks":0,"open_issues":0,"watchers":0,"default_branch":"main","permissions":{"admin":true,"maintain":true,"push":true,"triage":true,"pull":true},"allow_squash_merge":true,"allow_merge_commit":true,"allow_rebase_merge":true,"allow_auto_merge":false,"delete_branch_on_merge":false,"allow_update_branch":false,"use_squash_pr_title_as_default":false,"squash_merge_commit_message":"COMMIT_MESSAGES","squash_merge_commit_title":"COMMIT_OR_PR_TITLE","merge_commit_message":"PR_TITLE","merge_commit_title":"MERGE_MESSAGE","network_count":0,"subscribers_count":1}
+2023-03-05 00:03:27,083 +0530 [main] INFO  (RestLogger.java:39) - Actual Repo Name:- Shruti-Repo
+2023-03-05 00:03:27,083 +0530 [main] INFO  (RestLogger.java:39) - Expected Repo Name:- Shruti-Repo
+2023-03-05 00:03:27,142 +0530 [main] INFO  (RestLogger.java:39) - ActualDescription:- Shruti API Repo
+2023-03-05 00:03:27,142 +0530 [main] INFO  (RestLogger.java:39) - ExpectedDescription:- Shruti API Repo
+2023-03-05 00:03:27,144 +0530 [main] INFO  (RestLogger.java:28) - XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+2023-03-05 00:03:27,144 +0530 [main] INFO  (RestLogger.java:29) - XXXXXXXXXXXXXXXE---N---DXXXXXXXXXXXXXXXXXXXX
+2023-03-05 00:03:27,145 +0530 [main] INFO  (RestLogger.java:30) - XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+2023-03-05 00:03:27,145 +0530 [main] INFO  (RestLogger.java:31) - X
+2023-03-05 00:03:27,145 +0530 [main] INFO  (RestLogger.java:32) - X
+2023-03-05 00:03:27,146 +0530 [main] INFO  (RestLogger.java:33) - X
+2023-03-05 00:03:27,146 +0530 [main] INFO  (RestLogger.java:34) - X
+2023-03-05 00:03:27,146 +0530 [main] INFO  (RestLogger.java:35) - X
+2023-03-05 00:03:30,206 +0530 [Finalizer] DEBUG (DefaultClientConnection.java:180) - Connection 0.0.0.0:61818<->20.207.73.85:443 closed
