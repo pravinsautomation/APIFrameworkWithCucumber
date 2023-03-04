@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="2" failures="2" name="cucumber.options.TestRunner" time="5.89" errors="0" skipped="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="java.vm.version" value="11.0.17+10-LTS-269"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-11.0.17\bin"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\CucumberAPITestingFramework\APIFramework"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="https://openjdk.java.net/"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="path.separator" value=";"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="C:\CucumberAPITestingFramework\APIFramework"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="java.runtime.version" value="11.0.17+10-LTS-269"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\laptop\AppData\Local\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 8.1"/>
+    <property name="classworlds.conf" value="C:\Maven\apache-maven-3.8.1\bin\..\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-11.0.17\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Git\cmd;C:\Program Files\Java\jdk-11.0.17\bin;C:\Maven\apache-maven-3.8.1\bin;C:\Program Files\nodejs\;C:\Users\laptop\AppData\Roaming\npm;C:\Users\laptop\AppData\Local\Programs\Microsoft VS Code\bin;."/>
+    <property name="maven.conf" value="C:\Maven\apache-maven-3.8.1\bin\../conf"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="java.class.version" value="55.0"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="6.3"/>
+    <property name="library.jansi.path" value="C:\Maven\apache-maven-3.8.1\bin\..\lib\jansi-native"/>
+    <property name="user.home" value="C:\Users\laptop"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.specification.version" value="11"/>
+    <property name="user.name" value="laptop"/>
+    <property name="java.class.path" value="C:\Maven\apache-maven-3.8.1\bin\..\boot\plexus-classworlds-2.6.0.jar"/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-11.0.17"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="11.0.17"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="sun.stderr.encoding" value="cp437"/>
+    <property name="maven.home" value="C:\Maven\apache-maven-3.8.1\bin\.."/>
+    <property name="file.separator" value="\"/>
+    <property name="java.version.date" value="2022-10-18"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="java.vendor.version" value="18.9"/>
+    <property name="sun.stdout.encoding" value="cp437"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase classname="Validate create repository" name="Verify create repo API #1" time="5.306">
+    <failure message="expected:&lt;201&gt; but was:&lt;401&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;201&gt; but was:&lt;401&gt;
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.failNotEquals(Assert.java:835)
+	at org.junit.Assert.assertEquals(Assert.java:647)
+	at org.junit.Assert.assertEquals(Assert.java:633)
+	at stepdefinition.CreateRepo.api_call_got_successful_with_status_code(CreateRepo.java:45)
+	at ✽.API call got successful with status code 201(file:///C:/CucumberAPITestingFramework/APIFramework/src/test/java/feature/createrepo.feature:7)
+</failure>
+    <system-out>*****************************************************
+*****************************************************
+$$$$$$$$$$$$$$$$$Verify create repo API$$$$$$$$$$$$$$$$$$$
+*****************************************************
+*****************************************************
+resource path1: /user/repos
+resource path2: /user/repos
+base URI:- https://api.github.com
+Resource Path:- /user/repos
+Request Payload:- {
+  &quot;name&quot; : &quot;Pravin-Repo&quot;,
+  &quot;description&quot; : &quot;My API Repo&quot;
+}
+Get connection for route {s}-&gt;https://api.github.com:443
+Connecting to api.github.com:443
+CookieSpec selected: ignoreCookies
+Auth cache not set in the context
+Proxy auth state: UNCHALLENGED
+Attempt 1 to execute request
+Sending request: POST /user/repos HTTP/1.1
+ &gt;&gt; &quot;POST /user/repos HTTP/1.1[\r][\n]&quot;
+ &gt;&gt; &quot;Authorization: Bearer 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[\r][\n]&quot;
+ &gt;&gt; &quot;Accept: */*[\r][\n]&quot;
+ &gt;&gt; &quot;Content-Type: application/json[\r][\n]&quot;
+ &gt;&gt; &quot;Content-Length: 64[\r][\n]&quot;
+ &gt;&gt; &quot;Host: api.github.com[\r][\n]&quot;
+ &gt;&gt; &quot;Connection: Keep-Alive[\r][\n]&quot;
+ &gt;&gt; &quot;User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.17)[\r][\n]&quot;
+ &gt;&gt; &quot;Accept-Encoding: gzip,deflate[\r][\n]&quot;
+ &gt;&gt; &quot;[\r][\n]&quot;
+&gt;&gt; POST /user/repos HTTP/1.1
+&gt;&gt; Authorization: Bearer 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
+&gt;&gt; Accept: */*
+&gt;&gt; Content-Type: application/json
+&gt;&gt; Content-Length: 64
+&gt;&gt; Host: api.github.com
+&gt;&gt; Connection: Keep-Alive
+&gt;&gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.17)
+&gt;&gt; Accept-Encoding: gzip,deflate
+ &gt;&gt; &quot;{[\r][\n]&quot;
+ &gt;&gt; &quot;  &quot;name&quot; : &quot;Pravin-Repo&quot;,[\r][\n]&quot;
+ &gt;&gt; &quot;  &quot;description&quot; : &quot;My API Repo&quot;[\r][\n]&quot;
+ &gt;&gt; &quot;}&quot;
+ &lt;&lt; &quot;HTTP/1.1 401 Unauthorized[\r][\n]&quot;
+ &lt;&lt; &quot;Server: GitHub.com[\r][\n]&quot;
+ &lt;&lt; &quot;Date: Sat, 04 Mar 2023 18:17:16 GMT[\r][\n]&quot;
+ &lt;&lt; &quot;Content-Type: application/json; charset=utf-8[\r][\n]&quot;
+ &lt;&lt; &quot;Content-Length: 80[\r][\n]&quot;
+ &lt;&lt; &quot;X-GitHub-Media-Type: github.v3; format=json[\r][\n]&quot;
+ &lt;&lt; &quot;X-RateLimit-Limit: 60[\r][\n]&quot;
+ &lt;&lt; &quot;X-RateLimit-Remaining: 53[\r][\n]&quot;
+ &lt;&lt; &quot;X-RateLimit-Reset: 1677956821[\r][\n]&quot;
+ &lt;&lt; &quot;X-RateLimit-Used: 7[\r][\n]&quot;
+ &lt;&lt; &quot;X-RateLimit-Resource: core[\r][\n]&quot;
+ &lt;&lt; &quot;Access-Control-Expose-Headers: ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, X-GitHub-SSO, X-GitHub-Request-Id, Deprecation, Sunset[\r][\n]&quot;
+ &lt;&lt; &quot;Access-Control-Allow-Origin: *[\r][\n]&quot;
+ &lt;&lt; &quot;Strict-Transport-Security: max-age=31536000; includeSubdomains; preload[\r][\n]&quot;
+ &lt;&lt; &quot;X-Frame-Options: deny[\r][\n]&quot;
+ &lt;&lt; &quot;X-Content-Type-Options: nosniff[\r][\n]&quot;
+ &lt;&lt; &quot;X-XSS-Protection: 0[\r][\n]&quot;
+ &lt;&lt; &quot;Referrer-Policy: origin-when-cross-origin, strict-origin-when-cross-origin[\r][\n]&quot;
+ &lt;&lt; &quot;Content-Security-Policy: default-src &apos;none&apos;[\r][\n]&quot;
+ &lt;&lt; &quot;Vary: Accept-Encoding, Accept, X-Requested-With[\r][\n]&quot;
+ &lt;&lt; &quot;X-GitHub-Request-Id: F07C:6390:2626B:64113:64038B2C[\r][\n]&quot;
+ &lt;&lt; &quot;[\r][\n]&quot;
+Receiving response: HTTP/1.1 401 Unauthorized
+&lt;&lt; HTTP/1.1 401 Unauthorized
+&lt;&lt; Server: GitHub.com
+&lt;&lt; Date: Sat, 04 Mar 2023 18:17:16 GMT
+&lt;&lt; Content-Type: application/json; charset=utf-8
+&lt;&lt; Content-Length: 80
+&lt;&lt; X-GitHub-Media-Type: github.v3; format=json
+&lt;&lt; X-RateLimit-Limit: 60
+&lt;&lt; X-RateLimit-Remaining: 53
+&lt;&lt; X-RateLimit-Reset: 1677956821
+&lt;&lt; X-RateLimit-Used: 7
+&lt;&lt; X-RateLimit-Resource: core
+&lt;&lt; Access-Control-Expose-Headers: ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, X-GitHub-SSO, X-GitHub-Request-Id, Deprecation, Sunset
+&lt;&lt; Access-Control-Allow-Origin: *
+&lt;&lt; Strict-Transport-Security: max-age=31536000; includeSubdomains; preload
+&lt;&lt; X-Frame-Options: deny
+&lt;&lt; X-Content-Type-Options: nosniff
+&lt;&lt; X-XSS-Protection: 0
+&lt;&lt; Referrer-Policy: origin-when-cross-origin, strict-origin-when-cross-origin
+&lt;&lt; Content-Security-Policy: default-src &apos;none&apos;
+&lt;&lt; Vary: Accept-Encoding, Accept, X-Requested-With
+&lt;&lt; X-GitHub-Request-Id: F07C:6390:2626B:64113:64038B2C
+Connection can be kept alive indefinitely
+Authentication required
+api.github.com:443 requested authentication
+Response contains no authentication challenges
+Parsing response as: application/json; charset=utf-8
+Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+ &lt;&lt; &quot;{&quot;message&quot;:&quot;Bad credentials&quot;,&quot;documentation_url&quot;:&quot;https://docs.github.com/rest&quot;}&quot;
+Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@202ae86f
+Connection can be kept alive indefinitely
+Request Response:- {&quot;message&quot;:&quot;Bad credentials&quot;,&quot;documentation_url&quot;:&quot;https://docs.github.com/rest&quot;}
+Response IS:- {&quot;message&quot;:&quot;Bad credentials&quot;,&quot;documentation_url&quot;:&quot;https://docs.github.com/rest&quot;}
+</system-out>
+  </testcase>
+  <testcase classname="Validate create repository" name="Verify create repo API #2" time="0.584">
+    <failure message="expected:&lt;201&gt; but was:&lt;401&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;201&gt; but was:&lt;401&gt;
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.failNotEquals(Assert.java:835)
+	at org.junit.Assert.assertEquals(Assert.java:647)
+	at org.junit.Assert.assertEquals(Assert.java:633)
+	at stepdefinition.CreateRepo.api_call_got_successful_with_status_code(CreateRepo.java:45)
+	at ✽.API call got successful with status code 201(file:///C:/CucumberAPITestingFramework/APIFramework/src/test/java/feature/createrepo.feature:7)
+</failure>
+    <system-out>*****************************************************
+*****************************************************
+$$$$$$$$$$$$$$$$$Verify create repo API$$$$$$$$$$$$$$$$$$$
+*****************************************************
+*****************************************************
+resource path1: /user/repos
+resource path2: /user/repos
+base URI:- https://api.github.com
+Resource Path:- /user/repos
+Request Payload:- {
+  &quot;name&quot; : &quot;Shruti-Repo&quot;,
+  &quot;description&quot; : &quot;Shruti API Repo&quot;
+}
+Get connection for route {s}-&gt;https://api.github.com:443
+Connecting to api.github.com:443
+CookieSpec selected: ignoreCookies
+Auth cache not set in the context
+Proxy auth state: UNCHALLENGED
+Attempt 1 to execute request
+Sending request: POST /user/repos HTTP/1.1
+ &gt;&gt; &quot;POST /user/repos HTTP/1.1[\r][\n]&quot;
+ &gt;&gt; &quot;Authorization: Bearer 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[\r][\n]&quot;
+ &gt;&gt; &quot;Accept: */*[\r][\n]&quot;
+ &gt;&gt; &quot;Content-Type: application/json[\r][\n]&quot;
+ &gt;&gt; &quot;Content-Length: 68[\r][\n]&quot;
+ &gt;&gt; &quot;Host: api.github.com[\r][\n]&quot;
+ &gt;&gt; &quot;Connection: Keep-Alive[\r][\n]&quot;
+ &gt;&gt; &quot;User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.17)[\r][\n]&quot;
+ &gt;&gt; &quot;Accept-Encoding: gzip,deflate[\r][\n]&quot;
+ &gt;&gt; &quot;[\r][\n]&quot;
+&gt;&gt; POST /user/repos HTTP/1.1
+&gt;&gt; Authorization: Bearer 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
+&gt;&gt; Accept: */*
+&gt;&gt; Content-Type: application/json
+&gt;&gt; Content-Length: 68
+&gt;&gt; Host: api.github.com
+&gt;&gt; Connection: Keep-Alive
+&gt;&gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.17)
+&gt;&gt; Accept-Encoding: gzip,deflate
+ &gt;&gt; &quot;{[\r][\n]&quot;
+ &gt;&gt; &quot;  &quot;name&quot; : &quot;Shruti-Repo&quot;,[\r][\n]&quot;
+ &gt;&gt; &quot;  &quot;description&quot; : &quot;Shruti API Repo&quot;[\r][\n]&quot;
+ &gt;&gt; &quot;}&quot;
+ &lt;&lt; &quot;HTTP/1.1 401 Unauthorized[\r][\n]&quot;
+ &lt;&lt; &quot;Server: GitHub.com[\r][\n]&quot;
+ &lt;&lt; &quot;Date: Sat, 04 Mar 2023 18:17:17 GMT[\r][\n]&quot;
+ &lt;&lt; &quot;Content-Type: application/json; charset=utf-8[\r][\n]&quot;
+ &lt;&lt; &quot;Content-Length: 80[\r][\n]&quot;
+ &lt;&lt; &quot;X-GitHub-Media-Type: github.v3; format=json[\r][\n]&quot;
+ &lt;&lt; &quot;X-RateLimit-Limit: 60[\r][\n]&quot;
+ &lt;&lt; &quot;X-RateLimit-Remaining: 52[\r][\n]&quot;
+ &lt;&lt; &quot;X-RateLimit-Reset: 1677956821[\r][\n]&quot;
+ &lt;&lt; &quot;X-RateLimit-Used: 8[\r][\n]&quot;
+ &lt;&lt; &quot;X-RateLimit-Resource: core[\r][\n]&quot;
+ &lt;&lt; &quot;Access-Control-Expose-Headers: ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, X-GitHub-SSO, X-GitHub-Request-Id, Deprecation, Sunset[\r][\n]&quot;
+ &lt;&lt; &quot;Access-Control-Allow-Origin: *[\r][\n]&quot;
+ &lt;&lt; &quot;Strict-Transport-Security: max-age=31536000; includeSubdomains; preload[\r][\n]&quot;
+ &lt;&lt; &quot;X-Frame-Options: deny[\r][\n]&quot;
+ &lt;&lt; &quot;X-Content-Type-Options: nosniff[\r][\n]&quot;
+ &lt;&lt; &quot;X-XSS-Protection: 0[\r][\n]&quot;
+ &lt;&lt; &quot;Referrer-Policy: origin-when-cross-origin, strict-origin-when-cross-origin[\r][\n]&quot;
+ &lt;&lt; &quot;Content-Security-Policy: default-src &apos;none&apos;[\r][\n]&quot;
+ &lt;&lt; &quot;Vary: Accept-Encoding, Accept, X-Requested-With[\r][\n]&quot;
+ &lt;&lt; &quot;X-GitHub-Request-Id: F07D:7E50:12767:504DA:64038B2D[\r][\n]&quot;
+ &lt;&lt; &quot;[\r][\n]&quot;
+Receiving response: HTTP/1.1 401 Unauthorized
+&lt;&lt; HTTP/1.1 401 Unauthorized
+&lt;&lt; Server: GitHub.com
+&lt;&lt; Date: Sat, 04 Mar 2023 18:17:17 GMT
+&lt;&lt; Content-Type: application/json; charset=utf-8
+&lt;&lt; Content-Length: 80
+&lt;&lt; X-GitHub-Media-Type: github.v3; format=json
+&lt;&lt; X-RateLimit-Limit: 60
+&lt;&lt; X-RateLimit-Remaining: 52
+&lt;&lt; X-RateLimit-Reset: 1677956821
+&lt;&lt; X-RateLimit-Used: 8
+&lt;&lt; X-RateLimit-Resource: core
+&lt;&lt; Access-Control-Expose-Headers: ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, X-GitHub-SSO, X-GitHub-Request-Id, Deprecation, Sunset
+&lt;&lt; Access-Control-Allow-Origin: *
+&lt;&lt; Strict-Transport-Security: max-age=31536000; includeSubdomains; preload
+&lt;&lt; X-Frame-Options: deny
+&lt;&lt; X-Content-Type-Options: nosniff
+&lt;&lt; X-XSS-Protection: 0
+&lt;&lt; Referrer-Policy: origin-when-cross-origin, strict-origin-when-cross-origin
+&lt;&lt; Content-Security-Policy: default-src &apos;none&apos;
+&lt;&lt; Vary: Accept-Encoding, Accept, X-Requested-With
+&lt;&lt; X-GitHub-Request-Id: F07D:7E50:12767:504DA:64038B2D
+Connection can be kept alive indefinitely
+Authentication required
+api.github.com:443 requested authentication
+Response contains no authentication challenges
+Parsing response as: application/json; charset=utf-8
+Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+ &lt;&lt; &quot;{&quot;message&quot;:&quot;Bad credentials&quot;,&quot;documentation_url&quot;:&quot;https://docs.github.com/rest&quot;}&quot;
+Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@6f8e9d06
+Connection can be kept alive indefinitely
+Request Response:- {&quot;message&quot;:&quot;Bad credentials&quot;,&quot;documentation_url&quot;:&quot;https://docs.github.com/rest&quot;}
+Response IS:- {&quot;message&quot;:&quot;Bad credentials&quot;,&quot;documentation_url&quot;:&quot;https://docs.github.com/rest&quot;}
+</system-out>
+  </testcase>
+</testsuite>
