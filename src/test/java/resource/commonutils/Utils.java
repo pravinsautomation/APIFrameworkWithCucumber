@@ -7,7 +7,7 @@ import io.restassured.specification.RequestSpecification;
 
 public class Utils {
 
-	String bearer_token = "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";
+	String bearer_token = "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";
 	//user: pravinsautomation password: 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
 	String baseURI = "https://api.github.com";
 	Response response;
