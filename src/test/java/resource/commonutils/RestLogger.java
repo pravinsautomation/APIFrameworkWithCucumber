@@ -6,19 +6,20 @@ import org.apache.log4j.PropertyConfigurator;
 public class RestLogger {
 
 	public static Logger log = Logger.getLogger(RestLogger.class.getName());
-	
+
 	public static void initLogger() {
 		PropertyConfigurator.configure("log4j.properties");
 	}
 
 	public static Logger getLogger() {
-		return log;		
+		return log;
 	}
+
 	public static void startTestCase(String sTestCaseName) {
 
 		log.info("*****************************************************");
 		log.info("*****************************************************");
-		log.info("$$$$$$$$$$$$$$$$$" + sTestCaseName + "$$$$$$$$$$$$$$$$$$$");
+		log.info("$$$$$$$$$$$$$$$$$" + sTestCaseName + "$$$$$$$$$$$$$$$");
 		log.info("*****************************************************");
 		log.info("*****************************************************");
 	}
@@ -26,7 +27,7 @@ public class RestLogger {
 	public static void endTestCase() {
 
 		log.info("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
-		log.info("XXXXXXXXXXXXXXX" + "E---N---D" + "XXXXXXXXXXXXXXXXXXXX");
+		log.info("XXXXXXXXXXXXXXX" + "E---N---D" + "XXXXXXXXXXXXXXXX");
 		log.info("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
 		log.info("X");
 		log.info("X");

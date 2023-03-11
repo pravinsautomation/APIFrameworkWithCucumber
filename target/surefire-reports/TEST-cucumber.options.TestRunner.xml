@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="2" failures="0" name="cucumber.options.TestRunner" time="18.398" errors="0" skipped="0">
+<testsuite tests="7" failures="0" name="cucumber.options.TestRunner" time="20.1" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="11.0.17+10-LTS-269"/>
@@ -28,7 +28,7 @@
     <property name="os.name" value="Windows 8.1"/>
     <property name="classworlds.conf" value="C:\Maven\apache-maven-3.8.1\bin\..\bin\m2.conf"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk-11.0.17\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Git\cmd;C:\Program Files\Java\jdk1.8.0_121\bin;C:\Maven\apache-maven-3.8.1\bin;C:\Program Files\nodejs\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files\Java\jdk-11.0.17\bin;."/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-11.0.17\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Git\cmd;C:\Program Files\Java\jdk-11.0.17\bin;C:\Maven\apache-maven-3.8.1\bin;C:\Program Files\nodejs\;;."/>
     <property name="maven.conf" value="C:\Maven\apache-maven-3.8.1\bin\../conf"/>
     <property name="jdk.debug" value="release"/>
     <property name="java.class.version" value="55.0"/>
@@ -46,7 +46,7 @@
     <property name="jdk.net.URLClassPath.disableClassPathURLCheck" value="true"/>
     <property name="java.vm.specification.version" value="11"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean test verify"/>
     <property name="java.home" value="C:\Program Files\Java\jdk-11.0.17"/>
     <property name="user.language" value="en"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
@@ -64,6 +64,11 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="Validate create repository" name="Verify create repo API #1" time="16.709"/>
-  <testcase classname="Validate create repository" name="Verify create repo API #2" time="1.689"/>
+  <testcase classname="Validate create repository" name="Verify create repo API #1" time="11.738"/>
+  <testcase classname="Validate create repository" name="Verify create repo API #2" time="2.14"/>
+  <testcase classname="Validate create repository" name="Verify rename repository API #1" time="1.408"/>
+  <testcase classname="Validate create repository" name="Verify rename repository API #2" time="1.221"/>
+  <testcase classname="Validate create repository" name="Verify delete create repo API #1" time="1.232"/>
+  <testcase classname="Validate create repository" name="Verify delete create repo API #2" time="1.133"/>
+  <testcase classname="Validate List Of repository" name="Verify list of repositories API" time="1.228"/>
 </testsuite>

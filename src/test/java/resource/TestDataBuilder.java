@@ -15,4 +15,9 @@ public class TestDataBuilder {
 		return req_payload.getName();
 	}
 
+	public Object renameRepoPayload(String newRepoName) {
+		req_payload.setName(newRepoName);
+		return req_payload;
+	}
+
 }

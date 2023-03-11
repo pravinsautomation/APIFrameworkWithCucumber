@@ -4,14 +4,13 @@ package stepdefinition;
 
 import PojoPayloads.CreateRepoPojo;
 import static org.junit.Assert.*;
+
+import java.util.ArrayList;
 import io.cucumber.core.internal.com.fasterxml.jackson.core.JsonProcessingException;
 import io.cucumber.core.internal.com.fasterxml.jackson.databind.ObjectMapper;
 import io.cucumber.java.en.*;
-import io.restassured.RestAssured;
-import io.restassured.http.ContentType;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
-import io.restassured.specification.RequestSpecification;
 import resource.TestDataBuilder;
 import resource.commonutils.RestLogger;
 import resource.commonutils.Utils;
@@ -29,7 +28,10 @@ public class CreateRepo extends Utils {
 	@Given("create repo payload name {string} and description {string}")
 	public void create_repo_payload_name_and_description(String name, String desc) throws JsonProcessingException {
 		objMapper = new ObjectMapper();
+		// Converting object to String- Serialization
 		payload = objMapper.writerWithDefaultPrettyPrinter().writeValueAsString(testData.createRepoPayload(name, desc));
+		RestLogger.info("PAYLOAD IS:- " + payload);
+		// Convrting String to Object- DeSerialization
 		CreateRepoPojo repopojo = objMapper.readValue(payload, CreateRepoPojo.class);
 	}
 
@@ -88,4 +90,40 @@ public class CreateRepo extends Utils {
 	public void ending_test_case() {
 		RestLogger.endTestCase();
 	}
+	
+	@When("user calls list repo {string} api call")
+	public void user_calls_list_repo_api_call(String resourcePath) {
+		RestLogger.info("resource path is: " + resourcePath);
+		response = getRequest(resourcePath);
+		RestLogger.info("Get Repository Response IS:-"+response.getBody().asString());				
+	}
+	
+	@Then("Validate that response contains repository name {string}")
+	public void validate_that_response_contains_repository_name(String repoName) {
+		ArrayList<String> repositoryList = new ArrayList<String>();
+		ArrayList<String> repositoryDescriptionList = new ArrayList<String>();
+		jsonPath = new JsonPath(response.getBody().asString());		
+		repositoryList = jsonPath.get("name");
+		repositoryDescriptionList = jsonPath.get("description");
+		RestLogger.info("Expected Repo: "+repoName +"  "+"ActualRepositoryList: "+repositoryList);
+		assertTrue(repositoryList.contains(repoName));
+	}
+	
+	@Given("create rename repo payload with new name {string}")
+	public void create_rename_repo_payload_with_new_name(String newRepoName) throws JsonProcessingException {
+		objMapper = new ObjectMapper();
+		// Converting object to String- Serialization
+		payload = objMapper.writerWithDefaultPrettyPrinter().writeValueAsString(testData.renameRepoPayload(newRepoName));
+		RestLogger.info("PAYLOAD IS:- " + payload);
+	}
+	@When("user calls rename repo api {string} call for oldrepo {string}")
+	public void user_calls_rename_repo_api_call_for_oldrepo(String resourcePath, String oldRepoName) {
+		System.out.println("resource path Rename API: " + resourcePath);
+		response = patchRequest(resourcePath+oldRepoName, payload);		
+		RestLogger.info("Response IS:- " + response.getBody().asString());
+	}
+	
+	
+	
+	
 }

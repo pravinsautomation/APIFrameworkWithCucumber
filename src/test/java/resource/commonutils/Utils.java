@@ -7,8 +7,9 @@ import io.restassured.specification.RequestSpecification;
 
 public class Utils {
 
-	String bearer_token = "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";
-	//user: pravinsautomation password: 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
+	//below is classic token- used for git api accesses, fine grained token can also be used
+	String bearer_token = "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";
+
 	String baseURI = "https://api.github.com";
 	Response response;
 	RequestSpecification reqSpec;
@@ -41,6 +42,40 @@ public class Utils {
 			reqSpec.header("Authorization", "Bearer " + bearer_token);
 			response = reqSpec.delete(requestURI);
 			System.out.println(response.asString());
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return response;
+	}
+	
+	public Response getRequest(String resourcePath) {
+		try {
+			reqSpec = RestAssured.given();
+			reqSpec.contentType(ContentType.JSON);
+			reqSpec.header("Content-Type", "application/json");
+			reqSpec.header("Authorization", "Bearer " + bearer_token);
+			reqSpec.queryParams("tab", "repositories");
+			System.out.println("URL: "+baseURI+resourcePath);
+			response = reqSpec.get(baseURI+resourcePath);
+			System.out.println(response.asString());
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return response;
+	}
+	
+	public Response patchRequest(String resourcePath, String payload) {
+		try {
+			System.out.println("resource path2: " + resourcePath);
+			RestLogger.info("base URI:- "+baseURI);
+			RestLogger.info("Resource Path:- "+resourcePath);
+			RestLogger.info("Request Payload:- "+payload);
+			reqSpec = RestAssured.given().body(payload);
+			reqSpec.contentType(ContentType.JSON);
+			reqSpec.header("Authorization", "Bearer " + bearer_token);
+			response = reqSpec.post(baseURI + resourcePath);
+			RestLogger.info("Request Response:- "+response.getBody().asString());
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
