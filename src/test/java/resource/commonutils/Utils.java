@@ -9,7 +9,6 @@ public class Utils {
 
 	//below is classic token- used for git api accesses, fine grained token can also be used
 	String bearer_token = "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";
-
 	String baseURI = "https://api.github.com";
 	Response response;
 	RequestSpecification reqSpec;
